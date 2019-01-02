@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="75" id="KGk-i7-Jjw" customClass="Demo1TableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="75"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="74.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="e1C-de-qFq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="154.5"/>
+                        <color key="backgroundColor" red="0.23921568630000001" green="0.5450980392" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="标题测试" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ks-MS-IP1">
+                        <rect key="frame" x="223" y="25.5" width="82" height="24"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                        <color key="textColor" red="0.039380699999999998" green="0.16011600000000001" blue="0.19833300000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" red="0.21960784310000001" green="0.53333333329999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                <constraints>
+                    <constraint firstItem="0ks-MS-IP1" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="7R2-Ty-m7I"/>
+                    <constraint firstItem="e1C-de-qFq" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" constant="80" id="Ke5-Xu-QVG"/>
+                    <constraint firstAttribute="trailing" secondItem="0ks-MS-IP1" secondAttribute="trailing" constant="15" id="MHP-ih-nX7"/>
+                    <constraint firstItem="e1C-de-qFq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Qkn-Pk-iFr"/>
+                    <constraint firstItem="e1C-de-qFq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="VLA-8Z-9rU"/>
+                    <constraint firstAttribute="trailing" secondItem="e1C-de-qFq" secondAttribute="trailing" id="m0c-cF-YQV"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.21960784310000001" green="0.53333333329999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <connections>
+                <outlet property="heightLayout" destination="Ke5-Xu-QVG" id="e9e-UT-RAq"/>
+                <outlet property="ss_imageView" destination="e1C-de-qFq" id="ptD-oi-U4O"/>
+                <outlet property="topLayout" destination="Qkn-Pk-iFr" id="EUJ-Zy-m6A"/>
+            </connections>
+            <point key="canvasLocation" x="25" y="67.5"/>
+        </tableViewCell>
+    </objects>
+</document>

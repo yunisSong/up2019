@@ -8,7 +8,9 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
+@interface ViewController ()<UITableViewDataSource,UITableViewDelegate>
+@property (weak, nonatomic) IBOutlet UITableView *tab;
+@property(nonatomic,strong)NSArray *sourceArray;
 
 @end
 
@@ -17,13 +19,62 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    [self.tab registerClass:[UITableViewCell class] forCellReuseIdentifier:@"UP2019"];
+    self.tab.delegate = self;
+    self.tab.dataSource = self;
+    
 }
 
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark - Delegate
+//代理方法
+#pragma mark -
+#pragma mark Table View DataSource Methods
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return self.sourceArray.count;
 }
-
-
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 44;
+}
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"UP2019"];
+    cell.textLabel.text = [self cellTitle:indexPath];
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    cell.backgroundColor = [UIColor clearColor];
+    return cell;
+}
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    if (indexPath.row >= self.sourceArray.count) {
+        return;
+    }
+    Class cls = NSClassFromString([self cellClass:indexPath]);
+    if ( cls )
+    {
+        UIViewController *ctr = [cls new];
+        ctr.title = [self cellTitle:indexPath];
+        [self.navigationController pushViewController:ctr animated:YES];
+    }
+}
+- (NSArray *)sourceArray{
+    if (_sourceArray == nil) {
+        _sourceArray = ({
+            NSArray *arr = @[@{@"title":@"视觉差动画",@"class":@"Demo1ViewController"}];
+            arr;
+        });
+    }
+    
+    return _sourceArray;
+}
+- (NSString *)cellTitle:(NSIndexPath *)index {
+    NSDictionary *d = self.sourceArray[index.row];
+    return d[@"title"];
+}
+- (NSString *)cellClass:(NSIndexPath *)index {
+    NSDictionary *d = self.sourceArray[index.row];
+    return d[@"class"];
+}
 @end
