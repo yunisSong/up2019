@@ -5,6 +5,15 @@
 ## Build generated
 build/
 DerivedData/
+### Xcode ###
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+!*.xcworkspace/contents.xcworkspacedata
+
+### Objective-C ###
+# OS X
+.DS_Store
+
 
 ## Various settings
 *.pbxuser
@@ -34,7 +43,7 @@ xcuserdata/
 # you should judge for yourself, the pros and cons are mentioned at:
 # https://guides.cocoapods.org/using/using-cocoapods.html#should-i-check-the-pods-directory-into-source-control
 #
-# Pods/
+Pods/
 
 # Carthage
 #
