@@ -24,8 +24,6 @@
     self.tab.dataSource = self;
     
 }
-
-
 #pragma mark - Delegate
 //代理方法
 #pragma mark -
