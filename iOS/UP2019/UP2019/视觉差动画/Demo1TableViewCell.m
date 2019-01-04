@@ -20,8 +20,11 @@
 }
 - (void)cellOnTableView:(UITableView *)tableView didScrollView:(UIView *)view
 {
+    //获取当前 cell 在 view 的坐标 rect
     CGRect rect = [tableView convertRect:self.frame toView:view];
+    //view 高度
     float height = view.bounds.size.height;
+    //根据 rect 的y 值 计算出 image 的偏移量
     self.topLayout.constant = -(rect.origin.y) * (self.heightLayout.constant/height);
 }
 @end
