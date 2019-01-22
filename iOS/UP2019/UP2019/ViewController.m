@@ -23,6 +23,8 @@
     self.tab.delegate = self;
     self.tab.dataSource = self;
     
+
+    
 }
 #pragma mark - Delegate
 //代理方法
@@ -60,7 +62,8 @@
 - (NSArray *)sourceArray{
     if (_sourceArray == nil) {
         _sourceArray = ({
-            NSArray *arr = @[@{@"title":@"视觉差动画",@"class":@"Demo1ViewController"}];
+            NSArray *arr = @[@{@"title":@"视觉差动画",@"class":@"Demo1ViewController"},
+                             @{@"title":@"多级菜单",@"class":@"ListViewController"}];
             arr;
         });
     }
