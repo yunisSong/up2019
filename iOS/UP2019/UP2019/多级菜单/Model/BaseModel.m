@@ -22,7 +22,7 @@
     if (_open)
     {
         NSLog(@"++++++++++++++++++++++++++++++++");
-     //子节点加入到要显示的数组里面。
+        //子节点加入到要显示的数组里面。
         if (self.items)
         {
             BaseModel.reloadCount =  [self addSubList1:self.items withParentObj:self];
@@ -33,7 +33,7 @@
 
         if (self.items)
         {
-            [self delSubList:self.items withParentObj:self];
+            BaseModel.reloadCount = [self delSubList:self.items withParentObj:self];
         }
     }
 }
@@ -42,7 +42,6 @@
     if ([BaseModel.displayArray containsObject:parentModel]) {
         index = [BaseModel.displayArray indexOfObject:parentModel];
     }
-    NSMutableArray *temp = [NSMutableArray new];
     [subArray enumerateObjectsUsingBlock:^(BaseModel * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         if (index + 1 >=  BaseModel.displayArray.count) {
             [BaseModel.displayArray addObject:obj];
@@ -56,42 +55,63 @@
         }
     }];
 }
+
+/**
+ 把要显示的数据加入到 displayArray 数组中
+
+ @param subArray 要加入到 displayArray 的数据源
+ @param parentModel 父节点
+ @return 本次添加到 displayArray 的个数，为了刷新tableView 准备数据。
+ */
 - (int)addSubList1:(NSArray <BaseModel *>*)subArray withParentObj:(BaseModel *)parentModel{
-    NSInteger index = 0;
+    __block NSInteger index = 0;
     if ([BaseModel.displayArray containsObject:parentModel]) {
         index = [BaseModel.displayArray indexOfObject:parentModel];
     }
-    NSMutableArray *temp = [NSMutableArray new];
     __block int count = 0;
     [subArray enumerateObjectsUsingBlock:^(BaseModel * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         if (index + 1 >=  BaseModel.displayArray.count)
         {
             [BaseModel.displayArray addObject:obj];
+            
         }else
         {
             [BaseModel.displayArray insertObject:obj atIndex:index + 1];
         }
+        index += 1;
         count += 1;
         if (obj.isOpen) {
             int scount = [self addSubList1:obj.items withParentObj:obj];
             count += scount;
-
         }
     }];
     return count;
 }
-- (void)delSubList:(NSArray <BaseModel *>*)subArray withParentObj:(BaseModel *)parentModel{
-//    NSInteger index = 0;
-//    if ([BaseModel.displayArray containsObject:parentModel])
-//    {
-//        index = [BaseModel.displayArray indexOfObject:parentModel];
-//    }
+
+/**
+ 把不显示的数据移除 displayArray 数组中
+
+
+ @param subArray 要移除的数据源
+ @param parentModel 父节点
+ @return 本次移除 displayArray 的个数，为了刷新tableView 准备数据。
+ */
+- (int)delSubList:(NSArray <BaseModel *>*)subArray withParentObj:(BaseModel *)parentModel{
+    __block int count = 0;
+
     [subArray enumerateObjectsUsingBlock:^(BaseModel * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        [self delSubList:obj.items withParentObj:obj];
+        count += 1;
+        if (obj.open) {
+            int scount = [self delSubList:obj.items withParentObj:obj];
+            count += scount;
+        }
         [BaseModel.displayArray removeObject:obj];
     }];
     
+    return count;
 }
+
+
 - (BaseModel *)objectAtIndex:(NSInteger)index {
     if (index <= BaseModel.displayArray.count) {
         return BaseModel.displayArray[index];

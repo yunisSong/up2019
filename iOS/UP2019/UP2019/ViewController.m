@@ -22,10 +22,10 @@
     [self.tab registerClass:[UITableViewCell class] forCellReuseIdentifier:@"UP2019"];
     self.tab.delegate = self;
     self.tab.dataSource = self;
-    
 
     
 }
+
 #pragma mark - Delegate
 //代理方法
 #pragma mark -

@@ -31,6 +31,7 @@
         [self assignDate];
 
     });
+
     [self settingAppearance];
     [self loadSubViews];
     
@@ -44,7 +45,7 @@
 //初始化数据
 - (void)assignDate {
 
-    MBProgressHUD *hub =HUDLoading(@"", self.view);
+    MBProgressHUD *hub =HUDLoading(@"", nil);
 
     dispatch_async(dispatch_get_global_queue(0, 0), ^{
         // something
@@ -57,7 +58,6 @@
     });
 }
 
-
 - (void)settingAppearance {
     self.view.backgroundColor = [UIColor whiteColor];
 }
@@ -69,28 +69,6 @@
     }];
 }
 
-
-
-#pragma mark - Target Methods
-//点击事件
-
-#pragma mark - Network Methods
-//网络请求
-
-#pragma mark - Public Method
-//外部方法
-
-#pragma mark - Private Method
-//私有方法
-- (int )countIndex:(CityModel *)model {
-    if (model.isOpen)
-    {
-        return model.items.count;
-    }else
-    {
-        return 1;
-    }
-}
 #pragma mark - Delegate
 //代理方法
 
@@ -100,8 +78,26 @@
     [tableView deselectRowAtIndexPath:indexPath animated:NO];
     
     CityModel *model = [BaseModel.displayArray objectAtIndex:indexPath.row];
+    if (!model.items) {
+        return;
+    }
     model.open = !model.isOpen;
-    [tableView reloadData];
+    [tableView beginUpdates];
+    NSMutableArray * t = [NSMutableArray new];
+    for (int i= 0; i < BaseModel.reloadCount ; i++) {
+        NSIndexPath *index = [NSIndexPath indexPathForRow:indexPath.row + i + 1 inSection:0];
+        [t addObject:index];
+    }
+    [tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+    if (model.open)
+    {
+        [tableView insertRowsAtIndexPaths:t withRowAnimation:UITableViewRowAnimationTop];
+    }else
+    {
+        [tableView deleteRowsAtIndexPaths:t withRowAnimation:UITableViewRowAnimationBottom];
+    }
+    [tableView endUpdates];
+
 }
 #pragma mark UITableViewDataSource
 

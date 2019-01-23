@@ -8,6 +8,7 @@
 
 #import "CityModel+info.h"
 #import <objc/runtime.h>
+#import "CityModel+index.h"
 static const void *DropListViewHelpKey = &DropListViewHelpKey;
 
 @implementation CityModel (info)
@@ -31,80 +32,44 @@ static const void *DropListViewHelpKey = &DropListViewHelpKey;
                                                              error:&err];
     return allDic;
 }
+
+/**
+ 组织数据
+
+ @param provinceDic 子节点数据
+ @param level 数据层级
+ @param pmodel 子节点的父节点
+ @return 子节点数组
+ */
 - (NSArray *)iteration:(NSDictionary *)provinceDic parentLevel:(NSInteger)level parentModel:(CityModel *)pmodel
 {
     NSMutableArray *a = [NSMutableArray new];
-    
     [provinceDic.allKeys enumerateObjectsUsingBlock:^(NSString *key, NSUInteger idx, BOOL * _Nonnull stop) {
         NSString *name = provinceDic[key];
         CityModel *model = [CityModel new];
         model.code  = key;
         model.name = name;
         model.level = level + 1;
-//        if (pmodel.isOpen) {
-//            [self.displayArray addObject:model];
-//        }
         if ([self allInfo][key] )
         {
             NSArray *items = [self iteration:[self allInfo][key] parentLevel:model.level parentModel:model];
             NSArray *result = [items sortedArrayUsingComparator:^NSComparisonResult(CityModel *obj1, CityModel *obj2) {
-                NSString *hanziText1 = obj1.name;
-                NSMutableString *ms1;
-                NSMutableString *ms2;
-                if ([hanziText1 length]) {
-                    ms1 = [[NSMutableString alloc] initWithString:hanziText1];
-                    if (CFStringTransform((__bridge CFMutableStringRef)ms1, 0, kCFStringTransformMandarinLatin, NO)) {
-                    }
-                }
-                
-                NSString *hanziText2 = obj2.name;
-                if ([hanziText2 length]) {
-                    ms2 = [[NSMutableString alloc] initWithString:hanziText2];
-                    if (CFStringTransform((__bridge CFMutableStringRef)ms2, 0, kCFStringTransformMandarinLatin, NO)) {
-                    }
-                }
-                return [ms1 compare:ms2]; //升序
+                //排序。把这几行代码提出公共方法出来就不生效了！！
+                NSLocale *locale=[[NSLocale alloc] initWithLocaleIdentifier:@"zh_CN"];
+                NSRange string1Range = NSMakeRange(0, [obj1.name length]);
+                return [obj1.name compare:obj2.name options:0 range:string1Range locale:locale];
             }];
             model.items = result;
         }
         [a addObject:model];
     }];
     NSArray *b = [a sortedArrayUsingComparator:^NSComparisonResult(CityModel *obj1, CityModel *obj2) {
-        NSString *hanziText1 = obj1.name;
-        NSMutableString *ms1;
-        NSMutableString *ms2;
-        if ([hanziText1 length]) {
-            ms1 = [[NSMutableString alloc] initWithString:hanziText1];
-            if (CFStringTransform((__bridge CFMutableStringRef)ms1, 0, kCFStringTransformMandarinLatin, NO)) {
-            }
-        }
-        
-        NSString *hanziText2 = obj2.name;
-        if ([hanziText2 length]) {
-            ms2 = [[NSMutableString alloc] initWithString:hanziText2];
-            if (CFStringTransform((__bridge CFMutableStringRef)ms2, 0, kCFStringTransformMandarinLatin, NO)) {
-            }
-        }
-        return [ms1 compare:ms2]; //升序
+        NSLocale *locale=[[NSLocale alloc] initWithLocaleIdentifier:@"zh_CN"];
+        NSRange string1Range = NSMakeRange(0, [obj1.name length]);
+        return [obj1.name compare:obj2.name options:0 range:string1Range locale:locale];
     }];
     return b;
 }
 
-
-//- (NSMutableArray *)displayArray
-//{
-//    NSMutableArray *array = objc_getAssociatedObject(self, DropListViewHelpKey);
-//    if (!array)
-//    {
-//        array    = [NSMutableArray new];
-//        objc_setAssociatedObject(self, DropListViewHelpKey, array, OBJC_ASSOCIATION_RETAIN);
-//    }
-//    return array;
-//}
-//
-//- (void)setDisplayArray:(UITableView *)displayArray
-//{
-//    objc_setAssociatedObject(self, DropListViewHelpKey, displayArray, OBJC_ASSOCIATION_RETAIN);
-//}
 
 @end

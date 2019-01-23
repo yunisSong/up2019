@@ -9,6 +9,5 @@
 #import "CityModel.h"
 
 @interface CityModel (index)
-- (int)count ;
-- (CityModel *)modelWithIndex:(NSInteger)index;
+- (BOOL)sort:(CityModel *)model withModel:(CityModel *)model1;
 @end
