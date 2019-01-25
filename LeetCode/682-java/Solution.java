@@ -22,6 +22,7 @@ class Solution {
                 list.add(item);
             }
         }
+        
         for (String item : list) {
             int i3 = Integer.parseInt(item);
             sum += i3;
