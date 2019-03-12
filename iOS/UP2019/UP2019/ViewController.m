@@ -24,6 +24,7 @@
     self.tab.dataSource = self;
 
     
+
 }
 
 #pragma mark - Delegate
@@ -62,8 +63,12 @@
 - (NSArray *)sourceArray{
     if (_sourceArray == nil) {
         _sourceArray = ({
-            NSArray *arr = @[@{@"title":@"视觉差动画",@"class":@"Demo1ViewController"},
-                             @{@"title":@"多级菜单",@"class":@"ListViewController"}];
+            NSArray *arr = @[
+                             @{@"title":@"视觉差动画",@"class":@"Demo1ViewController"},
+                             @{@"title":@"多级菜单",@"class":@"ListViewController"},
+                             @{@"title":@"自定义卡片视图",@"class":@"CardViewController"},
+                             @{@"title":@"日期百分比",@"class":@"SYYearViewController"},
+                             ];
             arr;
         });
     }

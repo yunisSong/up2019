@@ -20,6 +20,7 @@ PODS:
   - MBProgressHUD (0.9.2)
   - MJExtension (3.0.15.1)
   - MJRefresh (3.1.15.7)
+  - PPCounter (0.6.0)
   - SDWebImage (4.4.2):
     - SDWebImage/Core (= 4.4.2)
   - SDWebImage/Core (4.4.2)
@@ -32,6 +33,7 @@ DEPENDENCIES:
   - MBProgressHUD (~> 0.9.1)
   - MJExtension (~> 3.0.13)
   - MJRefresh (~> 3.1.15.3)
+  - PPCounter (from `https://github.com/jkpang/PPCounter.git`)
   - SDWebImage
 
 SPEC REPOS:
@@ -45,6 +47,15 @@ SPEC REPOS:
     - MJRefresh
     - SDWebImage
 
+EXTERNAL SOURCES:
+  PPCounter:
+    :git: https://github.com/jkpang/PPCounter.git
+
+CHECKOUT OPTIONS:
+  PPCounter:
+    :commit: 5d5ca873af0ad50b395fff71b1f5e1ad3f43caea
+    :git: https://github.com/jkpang/PPCounter.git
+
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   IQKeyboardManager: 6b4ecd3e59cf55a26133d802d4678721d7f88499
@@ -53,8 +64,9 @@ SPEC CHECKSUMS:
   MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
   MJExtension: 19bc33ce2eee2d319760f5622562cf581a6ff756
   MJRefresh: 697f8ec75ebdbe9207767bb682cf0f51b0d8a41f
+  PPCounter: da37c0d8bfeeffe7ef4c331468203e17f2e30fbf
   SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
 
-PODFILE CHECKSUM: 023447d3b5cf214c2f080f7904d970d5edffd7eb
+PODFILE CHECKSUM: 5e8ea33e3541783924ab2b17e8a7d46e252de675
 
 COCOAPODS: 1.5.3

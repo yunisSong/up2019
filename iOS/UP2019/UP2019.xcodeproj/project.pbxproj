@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		6FA351FB18FD93A6C39E4A33 /* libPods-UP2019.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F66B6EE4F599F2BCE792D1E1 /* libPods-UP2019.a */; };
+		8B01DB9822379E15009B77E2 /* SYYearViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B01DB9622379E15009B77E2 /* SYYearViewController.m */; };
+		8B01DB9C22379E83009B77E2 /* NSDate+index.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B01DB9B22379E83009B77E2 /* NSDate+index.m */; };
+		8B01DBF22237AFD0009B77E2 /* UP2019Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B01DBF12237AFD0009B77E2 /* UP2019Tests.m */; };
+		8B01DBF52237E23A009B77E2 /* LineProcessView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B01DBF42237E23A009B77E2 /* LineProcessView.m */; };
+		8B0D143A21FF10F600821EC5 /* UIColor+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B0D143921FF10F600821EC5 /* UIColor+Extension.m */; };
+		8B19D61922168F49004C075F /* SYCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B19D61822168F49004C075F /* SYCardView.m */; };
+		8B19D61C22168F60004C075F /* SYCardViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B19D61B22168F60004C075F /* SYCardViewCell.m */; };
 		8B79C6F621F712FE00EB2845 /* MBProgressHUD+show.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B79C6F521F712FE00EB2845 /* MBProgressHUD+show.m */; };
 		8B7C4ABA21DC951F00C4FEC6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B7C4AB921DC951F00C4FEC6 /* AppDelegate.m */; };
 		8B7C4ABD21DC951F00C4FEC6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B7C4ABC21DC951F00C4FEC6 /* ViewController.m */; };
@@ -25,10 +32,36 @@
 		8BD0F9A321F73F2D00D3F48A /* CityTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BD0F99721F73F2D00D3F48A /* CityTableViewCell.xib */; };
 		8BD0F9A421F73F2D00D3F48A /* CityModel+info.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BD0F99A21F73F2D00D3F48A /* CityModel+info.m */; };
 		8BD0F9A521F73F2D00D3F48A /* CityModel+index.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BD0F99D21F73F2D00D3F48A /* CityModel+index.m */; };
+		8BF0AC6F22155CEB00849983 /* CardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BF0AC6E22155CEB00849983 /* CardViewController.m */; };
 		8BF7E13121F8360200FC0296 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 8BF7E13021F8360200FC0296 /* data.json */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		8B01DBEC2237AFC1009B77E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B7C4AAD21DC951F00C4FEC6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B7C4AB421DC951F00C4FEC6;
+			remoteInfo = UP2019;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		8B01DB9522379E15009B77E2 /* SYYearViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYYearViewController.h; sourceTree = "<group>"; };
+		8B01DB9622379E15009B77E2 /* SYYearViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYYearViewController.m; sourceTree = "<group>"; };
+		8B01DB9A22379E83009B77E2 /* NSDate+index.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDate+index.h"; sourceTree = "<group>"; };
+		8B01DB9B22379E83009B77E2 /* NSDate+index.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+index.m"; sourceTree = "<group>"; };
+		8B01DBE72237AFC1009B77E2 /* UP2019Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UP2019Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B01DBEB2237AFC1009B77E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B01DBF12237AFD0009B77E2 /* UP2019Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UP2019Tests.m; sourceTree = "<group>"; };
+		8B01DBF32237E23A009B77E2 /* LineProcessView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LineProcessView.h; sourceTree = "<group>"; };
+		8B01DBF42237E23A009B77E2 /* LineProcessView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LineProcessView.m; sourceTree = "<group>"; };
+		8B0D143821FF10F600821EC5 /* UIColor+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Extension.h"; sourceTree = "<group>"; };
+		8B0D143921FF10F600821EC5 /* UIColor+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Extension.m"; sourceTree = "<group>"; };
+		8B19D61722168F49004C075F /* SYCardView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYCardView.h; sourceTree = "<group>"; };
+		8B19D61822168F49004C075F /* SYCardView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYCardView.m; sourceTree = "<group>"; };
+		8B19D61A22168F60004C075F /* SYCardViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYCardViewCell.h; sourceTree = "<group>"; };
+		8B19D61B22168F60004C075F /* SYCardViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYCardViewCell.m; sourceTree = "<group>"; };
 		8B79C6F421F712FE00EB2845 /* MBProgressHUD+show.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+show.h"; sourceTree = "<group>"; };
 		8B79C6F521F712FE00EB2845 /* MBProgressHUD+show.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+show.m"; sourceTree = "<group>"; };
 		8B7C4AB521DC951F00C4FEC6 /* UP2019.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UP2019.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,6 +93,8 @@
 		8BD0F99B21F73F2D00D3F48A /* CityModel+index.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CityModel+index.h"; sourceTree = "<group>"; };
 		8BD0F99C21F73F2D00D3F48A /* CityModel+info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CityModel+info.h"; sourceTree = "<group>"; };
 		8BD0F99D21F73F2D00D3F48A /* CityModel+index.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CityModel+index.m"; sourceTree = "<group>"; };
+		8BF0AC6D22155CEB00849983 /* CardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CardViewController.h; sourceTree = "<group>"; };
+		8BF0AC6E22155CEB00849983 /* CardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CardViewController.m; sourceTree = "<group>"; };
 		8BF7E13021F8360200FC0296 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		999E40D21398E3E11C57B336 /* Pods-UP2019.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UP2019.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UP2019/Pods-UP2019.debug.xcconfig"; sourceTree = "<group>"; };
 		EDED1412071D6D4FDB8613D6 /* Pods-UP2019.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UP2019.release.xcconfig"; path = "Pods/Target Support Files/Pods-UP2019/Pods-UP2019.release.xcconfig"; sourceTree = "<group>"; };
@@ -67,6 +102,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		8B01DBE42237AFC1009B77E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8B7C4AB221DC951F00C4FEC6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -95,11 +137,46 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		8B01DB9422379DEA009B77E2 /* 日期百分比 */ = {
+			isa = PBXGroup;
+			children = (
+				8B01DB9522379E15009B77E2 /* SYYearViewController.h */,
+				8B01DB9622379E15009B77E2 /* SYYearViewController.m */,
+				8B01DB9A22379E83009B77E2 /* NSDate+index.h */,
+				8B01DB9B22379E83009B77E2 /* NSDate+index.m */,
+				8B01DBF32237E23A009B77E2 /* LineProcessView.h */,
+				8B01DBF42237E23A009B77E2 /* LineProcessView.m */,
+			);
+			path = "日期百分比";
+			sourceTree = "<group>";
+		};
+		8B01DBE82237AFC1009B77E2 /* UP2019Tests */ = {
+			isa = PBXGroup;
+			children = (
+				8B01DBF12237AFD0009B77E2 /* UP2019Tests.m */,
+				8B01DBEB2237AFC1009B77E2 /* Info.plist */,
+			);
+			path = UP2019Tests;
+			sourceTree = "<group>";
+		};
+		8B19D61622168F28004C075F /* CardView */ = {
+			isa = PBXGroup;
+			children = (
+				8B19D61722168F49004C075F /* SYCardView.h */,
+				8B19D61822168F49004C075F /* SYCardView.m */,
+				8B19D61A22168F60004C075F /* SYCardViewCell.h */,
+				8B19D61B22168F60004C075F /* SYCardViewCell.m */,
+			);
+			path = CardView;
+			sourceTree = "<group>";
+		};
 		8B79C6F321F712E600EB2845 /* Public */ = {
 			isa = PBXGroup;
 			children = (
 				8B79C6F421F712FE00EB2845 /* MBProgressHUD+show.h */,
 				8B79C6F521F712FE00EB2845 /* MBProgressHUD+show.m */,
+				8B0D143821FF10F600821EC5 /* UIColor+Extension.h */,
+				8B0D143921FF10F600821EC5 /* UIColor+Extension.m */,
 			);
 			path = Public;
 			sourceTree = "<group>";
@@ -108,6 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				8B7C4AB721DC951F00C4FEC6 /* UP2019 */,
+				8B01DBE82237AFC1009B77E2 /* UP2019Tests */,
 				8B7C4AB621DC951F00C4FEC6 /* Products */,
 				64B6EC22CFE22A4090522B01 /* Pods */,
 				72C0B492AC025963F0310E97 /* Frameworks */,
@@ -118,6 +196,7 @@
 			isa = PBXGroup;
 			children = (
 				8B7C4AB521DC951F00C4FEC6 /* UP2019.app */,
+				8B01DBE72237AFC1009B77E2 /* UP2019Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -132,6 +211,8 @@
 				8B79C6F321F712E600EB2845 /* Public */,
 				8B7C4ACF21DCB02200C4FEC6 /* 视觉差动画 */,
 				8BFFD40121F068C2006863D9 /* 多级菜单 */,
+				8BF0AC6822155CD500849983 /* 自定义卡片视图 */,
+				8B01DB9422379DEA009B77E2 /* 日期百分比 */,
 				8B7C4ABE21DC951F00C4FEC6 /* Main.storyboard */,
 				8B7C4AC121DC952100C4FEC6 /* Assets.xcassets */,
 				8B7C4AC321DC952100C4FEC6 /* LaunchScreen.storyboard */,
@@ -195,6 +276,48 @@
 			path = Help;
 			sourceTree = "<group>";
 		};
+		8BF0AC6822155CD500849983 /* 自定义卡片视图 */ = {
+			isa = PBXGroup;
+			children = (
+				8BF0AC6922155CD500849983 /* Controller */,
+				8BF0AC6A22155CD500849983 /* Model */,
+				8BF0AC6B22155CD500849983 /* View */,
+				8BF0AC6C22155CD500849983 /* Help */,
+			);
+			path = "自定义卡片视图";
+			sourceTree = "<group>";
+		};
+		8BF0AC6922155CD500849983 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8BF0AC6D22155CEB00849983 /* CardViewController.h */,
+				8BF0AC6E22155CEB00849983 /* CardViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8BF0AC6A22155CD500849983 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8BF0AC6B22155CD500849983 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8B19D61622168F28004C075F /* CardView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8BF0AC6C22155CD500849983 /* Help */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Help;
+			sourceTree = "<group>";
+		};
 		8BFFD40121F068C2006863D9 /* 多级菜单 */ = {
 			isa = PBXGroup;
 			children = (
@@ -210,6 +333,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		8B01DBE62237AFC1009B77E2 /* UP2019Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B01DBEE2237AFC1009B77E2 /* Build configuration list for PBXNativeTarget "UP2019Tests" */;
+			buildPhases = (
+				8B01DBE32237AFC1009B77E2 /* Sources */,
+				8B01DBE42237AFC1009B77E2 /* Frameworks */,
+				8B01DBE52237AFC1009B77E2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8B01DBED2237AFC1009B77E2 /* PBXTargetDependency */,
+			);
+			name = UP2019Tests;
+			productName = UP2019Tests;
+			productReference = 8B01DBE72237AFC1009B77E2 /* UP2019Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		8B7C4AB421DC951F00C4FEC6 /* UP2019 */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8B7C4ACB21DC952100C4FEC6 /* Build configuration list for PBXNativeTarget "UP2019" */;
@@ -238,6 +379,10 @@
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = Yunis;
 				TargetAttributes = {
+					8B01DBE62237AFC1009B77E2 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 8B7C4AB421DC951F00C4FEC6;
+					};
 					8B7C4AB421DC951F00C4FEC6 = {
 						CreatedOnToolsVersion = 9.4.1;
 					};
@@ -257,11 +402,19 @@
 			projectRoot = "";
 			targets = (
 				8B7C4AB421DC951F00C4FEC6 /* UP2019 */,
+				8B01DBE62237AFC1009B77E2 /* UP2019Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		8B01DBE52237AFC1009B77E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8B7C4AB321DC951F00C4FEC6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -319,26 +472,49 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		8B01DBE32237AFC1009B77E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B01DBF22237AFD0009B77E2 /* UP2019Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8B7C4AB121DC951F00C4FEC6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B01DB9822379E15009B77E2 /* SYYearViewController.m in Sources */,
 				8BD0F9A421F73F2D00D3F48A /* CityModel+info.m in Sources */,
 				8BD0F9A221F73F2D00D3F48A /* CityTableViewCell.m in Sources */,
+				8B19D61922168F49004C075F /* SYCardView.m in Sources */,
+				8BF0AC6F22155CEB00849983 /* CardViewController.m in Sources */,
+				8B0D143A21FF10F600821EC5 /* UIColor+Extension.m in Sources */,
 				8B79C6F621F712FE00EB2845 /* MBProgressHUD+show.m in Sources */,
 				8BD0F9A021F73F2D00D3F48A /* CityModel.m in Sources */,
 				8B7C4AD621DCB05400C4FEC6 /* Demo1TableViewCell.m in Sources */,
+				8B01DB9C22379E83009B77E2 /* NSDate+index.m in Sources */,
 				8BD0F99F21F73F2D00D3F48A /* BaseModel.m in Sources */,
 				8BD0F99E21F73F2D00D3F48A /* ListViewController.m in Sources */,
 				8B7C4ABD21DC951F00C4FEC6 /* ViewController.m in Sources */,
 				8B7C4AD521DCB05400C4FEC6 /* Demo1ViewController.m in Sources */,
+				8B19D61C22168F60004C075F /* SYCardViewCell.m in Sources */,
 				8BD0F9A521F73F2D00D3F48A /* CityModel+index.m in Sources */,
 				8B7C4AC821DC952100C4FEC6 /* main.m in Sources */,
+				8B01DBF52237E23A009B77E2 /* LineProcessView.m in Sources */,
 				8B7C4ABA21DC951F00C4FEC6 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8B01DBED2237AFC1009B77E2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8B7C4AB421DC951F00C4FEC6 /* UP2019 */;
+			targetProxy = 8B01DBEC2237AFC1009B77E2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		8B7C4ABE21DC951F00C4FEC6 /* Main.storyboard */ = {
@@ -360,6 +536,49 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		8B01DBEF2237AFC1009B77E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = UP2019Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yunis.demo.UP2019Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UP2019.app/UP2019";
+			};
+			name = Debug;
+		};
+		8B01DBF02237AFC1009B77E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = UP2019Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yunis.demo.UP2019Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UP2019.app/UP2019";
+			};
+			name = Release;
+		};
 		8B7C4AC921DC952100C4FEC6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -475,7 +694,8 @@
 			baseConfigurationReference = 999E40D21398E3E11C57B336 /* Pods-UP2019.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/UP2019/PrefixHeader.pch";
 				INFOPLIST_FILE = UP2019/Info.plist;
@@ -485,6 +705,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yunis.demo.UP2019;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -494,7 +715,8 @@
 			baseConfigurationReference = EDED1412071D6D4FDB8613D6 /* Pods-UP2019.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/UP2019/PrefixHeader.pch";
 				INFOPLIST_FILE = UP2019/Info.plist;
@@ -504,6 +726,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yunis.demo.UP2019;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -511,6 +734,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		8B01DBEE2237AFC1009B77E2 /* Build configuration list for PBXNativeTarget "UP2019Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B01DBEF2237AFC1009B77E2 /* Debug */,
+				8B01DBF02237AFC1009B77E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		8B7C4AB021DC951F00C4FEC6 /* Build configuration list for PBXProject "UP2019" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

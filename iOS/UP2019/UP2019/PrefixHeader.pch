@@ -10,8 +10,12 @@
 #define PrefixHeader_pch
 #import <Masonry.h>
 #import "MBProgressHUD+show.h"
-
+#import "UIColor+Extension.h"
 #define HUDLoading(loading,view) [MBProgressHUD showLoadingWithMessage:loading toView:view]
+#define WS(weakSelf)  __weak __typeof(&*self)weakSelf = self;
 
+#define SCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width)          /** 屏幕宽 */
+#define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)        /** 屏幕高 */
 
+#define RGBA(r,g,b,a) [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:a]
 #endif /* PrefixHeader_pch */
