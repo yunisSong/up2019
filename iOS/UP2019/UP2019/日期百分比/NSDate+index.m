@@ -112,6 +112,15 @@
     
     return out + day;
 }
+
++ (int)lastOfYear
+{
+    int year = [NSDate daysOfYeay];
+    int index = [NSDate indexOfYear];
+
+    NSLog(@" %d  %d",year,index);
+    return year - index;
+}
 + (float)percentOfWeek
 {
     int week = [NSDate indexOfWeek];

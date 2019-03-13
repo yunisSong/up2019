@@ -20,6 +20,8 @@
 + (int)indexOfMonth;
 + (int)indexOfYear;
 
++ (int)lastOfYear;
+
 + (float)percentOfWeek;
 + (float)percentOfMonth;
 + (float)percentOfYear;
