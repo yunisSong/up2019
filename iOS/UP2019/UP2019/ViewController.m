@@ -68,6 +68,8 @@
                              @{@"title":@"多级菜单",@"class":@"ListViewController"},
                              @{@"title":@"自定义卡片视图",@"class":@"CardViewController"},
                              @{@"title":@"日期百分比",@"class":@"SYYearViewController"},
+                             @{@"title":@"瀑布流",@"class":@"LayoutDemoViewController"},
+
                              ];
             arr;
         });
