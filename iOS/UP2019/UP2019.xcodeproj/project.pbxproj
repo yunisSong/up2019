@@ -25,6 +25,7 @@
 		8B7C4AD521DCB05400C4FEC6 /* Demo1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B7C4AD021DCB05400C4FEC6 /* Demo1ViewController.m */; };
 		8B7C4AD621DCB05400C4FEC6 /* Demo1TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B7C4AD221DCB05400C4FEC6 /* Demo1TableViewCell.m */; };
 		8B7C4AD721DCB05400C4FEC6 /* Demo1TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B7C4AD421DCB05400C4FEC6 /* Demo1TableViewCell.xib */; };
+		8B8550232238FB88008D58AC /* RotationLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8550222238FB88008D58AC /* RotationLayout.m */; };
 		8B9DBE552238A2A800AE5DCF /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B9DBE542238A2A800AE5DCF /* NotificationCenter.framework */; };
 		8B9DBE592238A2A800AE5DCF /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B9DBE582238A2A800AE5DCF /* TodayViewController.m */; };
 		8B9DBE5C2238A2A800AE5DCF /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B9DBE5A2238A2A800AE5DCF /* MainInterface.storyboard */; };
@@ -110,6 +111,8 @@
 		8B7C4AD221DCB05400C4FEC6 /* Demo1TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Demo1TableViewCell.m; sourceTree = "<group>"; };
 		8B7C4AD321DCB05400C4FEC6 /* Demo1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Demo1ViewController.h; sourceTree = "<group>"; };
 		8B7C4AD421DCB05400C4FEC6 /* Demo1TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Demo1TableViewCell.xib; sourceTree = "<group>"; };
+		8B8550212238FB88008D58AC /* RotationLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RotationLayout.h; sourceTree = "<group>"; };
+		8B8550222238FB88008D58AC /* RotationLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RotationLayout.m; sourceTree = "<group>"; };
 		8B9DBE532238A2A800AE5DCF /* process.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = process.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B9DBE542238A2A800AE5DCF /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 		8B9DBE572238A2A800AE5DCF /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
@@ -305,6 +308,8 @@
 				8B9DBE6D2238F49B00AE5DCF /* LayoutDemoViewController.m */,
 				8B9DBE6F2238F4D100AE5DCF /* LayoutDemo1.h */,
 				8B9DBE702238F4D100AE5DCF /* LayoutDemo1.m */,
+				8B8550212238FB88008D58AC /* RotationLayout.h */,
+				8B8550222238FB88008D58AC /* RotationLayout.m */,
 			);
 			path = "瀑布流";
 			sourceTree = "<group>";
@@ -604,6 +609,7 @@
 				8BD0F99F21F73F2D00D3F48A /* BaseModel.m in Sources */,
 				8BD0F99E21F73F2D00D3F48A /* ListViewController.m in Sources */,
 				8B7C4ABD21DC951F00C4FEC6 /* ViewController.m in Sources */,
+				8B8550232238FB88008D58AC /* RotationLayout.m in Sources */,
 				8B7C4AD521DCB05400C4FEC6 /* Demo1ViewController.m in Sources */,
 				8B19D61C22168F60004C075F /* SYCardViewCell.m in Sources */,
 				8BD0F9A521F73F2D00D3F48A /* CityModel+index.m in Sources */,
