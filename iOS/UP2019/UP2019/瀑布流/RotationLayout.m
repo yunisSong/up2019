@@ -76,4 +76,17 @@
     attributes.center = CGPointMake(x, y);
     return attributes;
 }
+//- (BOOL)shouldInvalidateLayoutForBoundsChange:(CGRect)newBounds
+//{
+//    return YES;
+//}
+//- (void)setRotationAngle:(CGFloat)rotationAngle
+//{
+//    _rotationAngle = rotationAngle;
+//    dispatch_async(dispatch_get_main_queue(), ^{
+//        // something
+//        [self invalidateLayout];
+//
+//    });
+//}
 @end

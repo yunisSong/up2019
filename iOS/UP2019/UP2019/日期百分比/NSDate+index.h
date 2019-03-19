@@ -29,5 +29,28 @@
 
 + (NSString*)weekdayString;
 
+
+
+
+
+- (NSString *)year;
+- (NSString *)month;
+- (NSString *)day;
+
+
+- (int)indexOfWeek;
+- (int)indexOfMonth;
+- (int)indexOfYear;
+
+- (int)lastOfYear;
+
+- (float)percentOfWeek;
+- (float)percentOfMonth;
+- (float)percentOfYear;
+
+
+- (NSString*)weekdayString;
+
+
 @end
 

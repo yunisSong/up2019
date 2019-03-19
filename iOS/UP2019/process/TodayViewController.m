@@ -84,12 +84,14 @@
         str = @"今天是周五😁";
         [self creatTipWithTitle:str font:[UIFont fontWithName:@"MyanmarSangamMN-Bold" size:26] originY:originY color:[UIColor colorWithHexString:@"#ff420e"]];
 
+    }else if ([NSDate indexOfWeek] == 6 || [NSDate indexOfWeek] == 7)
+    {
+        str = @"今天是周末😁";
+        [self creatTipWithTitle:str font:[UIFont fontWithName:@"MyanmarSangamMN-Bold" size:26] originY:originY color:[UIColor colorWithHexString:@"#ff420e"]];
     }else
     {
         str = @"今天不是周五😂";
         [self creatTipWithTitle:str font:[UIFont fontWithName:@"MyanmarSangamMN-Bold" size:20] originY:originY];
-
-
     }
     
     originY += 60;

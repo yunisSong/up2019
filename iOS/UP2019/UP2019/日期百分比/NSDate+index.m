@@ -44,10 +44,12 @@
         days[1] = 28;
     }
     int out=0;
-    for (int i = 1; i < 12;i++)
+    for (int i = 0; i < 12;i++)
     {
-        out += days[i-1];
+        out += days[i];
     }
+    
+    NSLog(@"------- == %d",out);
     return out;
 }
 + (int)daysOfMonth

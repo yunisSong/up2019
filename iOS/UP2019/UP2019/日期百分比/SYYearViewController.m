@@ -114,11 +114,19 @@
 
 - (void)creatWithProcess:(float )process originY:(float)y
 {
-    LineProcessView *p1 = [[LineProcessView alloc] initWithFrame:CGRectMake(20, y , CGRectGetWidth(self.view.frame) - 40, 20)];
+//    LineProcessView *p1 = [[LineProcessView alloc] initWithFrame:CGRectMake(20, y , CGRectGetWidth(self.view.frame) - 40, 20)];
+    LineProcessView *p1 = [[LineProcessView alloc] initWithFrame:CGRectZero];
     p1.processValue = process;
     p1.fillColor = [UIColor colorWithHexString:@"#6b5a53"]; //#859900
     p1.defaultColor = [UIColor colorWithHexString:@"#a4897e"];//2aa198
     [self.view addSubview:p1];
+
+    [p1 mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(@20);
+        make.top.mas_equalTo(y);
+        make.height.mas_equalTo(20);
+        make.width.equalTo(self.view).offset(- 40);
+    }];
 }
 #pragma mark - Delegate
 //代理方法

@@ -9,16 +9,19 @@
 #import "LayoutDemoViewController.h"
 #import "LayoutDemo1.h"
 #import "RotationLayout.h"
-@interface LayoutDemoViewController ()<UICollectionViewDataSource, UICollectionViewDelegate, CustomCollectionViewLayoutDelegate>
+@interface LayoutDemoViewController ()<UICollectionViewDataSource, UICollectionViewDelegate, CustomCollectionViewLayoutDelegate,UIGestureRecognizerDelegate>
 
 @property (strong, nonatomic) UICollectionView *collectionView;
 @property (strong, nonatomic) RotationLayout *rotationLayout;
 
 @property (strong, nonatomic) NSMutableArray *dataSource;
 @property (strong, nonatomic) NSMutableArray *itemHeights;
-@property(nonatomic,assign)CGPoint beginPoint;
-@property(nonatomic,assign)CGPoint centerPoint;
 
+
+@property (nonatomic,assign)CGPoint beginPoint; /**<起始点*/
+@property (nonatomic,assign)CGPoint centerPoint; /**<圆心*/
+@property (nonatomic,assign)CGPoint lastPoint; /**<上次滑动的点*/
+@property (assign, nonatomic) CGFloat totalRads; /**<划过的总角度*/
 
 @end
 
@@ -79,6 +82,7 @@
     [self.view addSubview:_collectionView];
     
     UIPanGestureRecognizer *tap = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(test:)];
+    tap.delegate = self;
     [self.collectionView addGestureRecognizer:tap];
     
     self.centerPoint = self.collectionView.center;
@@ -90,67 +94,68 @@
 //点击事件
 
 - (void)test:(UIPanGestureRecognizer *)tap {
-    switch (tap.state) {
-        case UIGestureRecognizerStateBegan:
-        {
-            CGPoint p = [tap locationInView:tap.view];
-            _beginPoint = p;
-            NSLog(@"begin = %@",NSStringFromCGPoint(p));
-            break;
-        }
-        case UIGestureRecognizerStateChanged:
-        {
-            CGPoint p = [tap locationInView:tap.view];
-
-            NSLog(@"move = %@",NSStringFromCGPoint(p));
-
-            CGFloat a = self.centerPoint.x - _beginPoint.x;
-            CGFloat b = self.centerPoint.y - _beginPoint.y;
-            CGFloat c = self.centerPoint.x - p.x;
-            CGFloat d = self.centerPoint.y - p.y;
-            
-            CGFloat rads = acos(((a*c) + (b*d)) / ((sqrt(a*a + b*b)) * (sqrt(c*c + d*d))));
-            NSLog(@"---------------rads == %f",radiansToDegrees(rads));
-            
-            // 浮点计算结果可能超过1，需要控制
-            rads = rads > 1 ? 1 : rads;
-            self.rotationLayout.rotationAngle = acos(rads);
-            [self.rotationLayout invalidateLayout];
-
-            break;
-        }
-        case UIGestureRecognizerStateEnded:
-        case UIGestureRecognizerStateCancelled:
-        case UIGestureRecognizerStateFailed:
-        {
-            CGPoint p = [tap locationInView:tap.view];
-
-            NSLog(@"end = %@",NSStringFromCGPoint(p));
-
-            break;
-        }
-
-        default:
-            break;
-    }
-}
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
-{
-    CGPoint centerPoint = self.collectionView.center;
-    UITouch *touch = touches.anyObject;
-    CGPoint point  = [touch locationInView:self.collectionView];
     
-    NSLog(@"begin %@",NSStringFromCGPoint(point));
+    
+    CGPoint point = [tap locationInView:tap.view];
+    CGFloat rLength = sqrt(pow((point.x - _centerPoint.x), 2.0)  +  pow((point.y - _centerPoint.y), 2.0));
+    
+    
+    float _larRadius = 200;
+     float _itemRadius = 76;
+    // 手势范围
+    if (rLength <= _larRadius && rLength >= _larRadius - _itemRadius) {
+        // 以collectionView center为中心计算滑动角度
+        CGFloat rads = [self angleBetweenFirstLineStart:_centerPoint
+                                           firstLineEnd:_lastPoint
+                                     andSecondLineStart:_centerPoint
+                                          secondLineEnd:point];
+        
+        if (_lastPoint.x != _centerPoint.x && point.x != _centerPoint.x) {
+            
+            CGFloat k1 = (_lastPoint.y - _centerPoint.y) / (_lastPoint.x - _centerPoint.x);
+            CGFloat k2 = (point.y - _centerPoint.y) / (point.x - _centerPoint.x);
+            if (k2 > k1) {
+                _totalRads += rads;
+            } else {
+                _totalRads -= rads;
+            }
+        }
+        
+        self.rotationLayout.rotationAngle = _totalRads;
+        // 重新布局
+        [self.rotationLayout invalidateLayout];
+        
+        // 更新记录点
+        _lastPoint = point;
+    }
+    // 由范围外进入范围内时将当前点赋值于记录点
+    else if (_lastPoint.x == -100 && _lastPoint.y == -100) {
+        _lastPoint = point;
+    }
+    // 由范围内进入范围外时清除记录点
+    else {
+        _lastPoint = CGPointMake(-100, -100);
+    }
+    
+    
 
 }
-- (void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+// 两条直线之间的夹角
+- (CGFloat)angleBetweenFirstLineStart:(CGPoint)firstLineStart
+                         firstLineEnd:(CGPoint)firstLineEnd
+                   andSecondLineStart:(CGPoint)secondLineStart
+                        secondLineEnd:(CGPoint)secondLineEnd
 {
-    CGPoint centerPoint = self.collectionView.center;
-    UITouch *touch = touches.anyObject;
-    CGPoint point  = [touch locationInView:self.collectionView];
-    NSLog(@"move %@",NSStringFromCGPoint(point));
-
-
+    CGFloat a1 = firstLineEnd.x - firstLineStart.x;
+    CGFloat b1 = firstLineEnd.y - firstLineStart.y;
+    CGFloat a2 = secondLineEnd.x - secondLineStart.x;
+    CGFloat b2 = secondLineEnd.y - secondLineStart.y;
+    
+    // 夹角余弦
+    double cos = (a1 * a2 + b1 * b2) / (sqrt(pow(a1, 2.0) + pow(b1, 2.0)) * sqrt(pow(a2, 2.0) + pow(b2, 2.0)));
+    // 浮点计算结果可能超过1，需要控制
+    cos = cos > 1 ? 1 : cos;
+    return acos(cos);
 }
 #pragma mark - Network Methods
 //网络请求
@@ -181,6 +186,9 @@
     [label mas_makeConstraints:^(MASConstraintMaker *make) {
         make.center.equalTo(cell);
     }];
+    
+    
+    
     return cell;
 }
 
@@ -191,6 +199,19 @@
 - (CGSize)collectionView:(UICollectionView *)collectionView collectionViewLayout:(LayoutDemo1 *)collectionViewLayout sizeOfItemAtIndexPath:(NSIndexPath *)indexPath {
     
     return CGSizeMake(SCREEN_WIDTH / 2 - 3 * 10, [_itemHeights[indexPath.row] floatValue]);
+}
+
+
+#pragma mark -- UIGestureRecognizerDelegate
+- (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer {
+    // 初始滑动时记录点为当前点
+    if ([gestureRecognizer isKindOfClass:[UIPanGestureRecognizer class]]) {
+        CGPoint point = [gestureRecognizer locationInView:gestureRecognizer.view];
+        _lastPoint = point;
+        
+        
+    }
+    return YES;
 }
 
 #pragma mark - Lazy Loads

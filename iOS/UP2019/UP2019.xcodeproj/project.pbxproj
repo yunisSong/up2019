@@ -10,7 +10,6 @@
 		6FA351FB18FD93A6C39E4A33 /* libPods-UP2019.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F66B6EE4F599F2BCE792D1E1 /* libPods-UP2019.a */; };
 		8B01DB9822379E15009B77E2 /* SYYearViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B01DB9622379E15009B77E2 /* SYYearViewController.m */; };
 		8B01DB9C22379E83009B77E2 /* NSDate+index.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B01DB9B22379E83009B77E2 /* NSDate+index.m */; };
-		8B01DBF22237AFD0009B77E2 /* UP2019Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B01DBF12237AFD0009B77E2 /* UP2019Tests.m */; };
 		8B01DBF52237E23A009B77E2 /* LineProcessView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B01DBF42237E23A009B77E2 /* LineProcessView.m */; };
 		8B0D143A21FF10F600821EC5 /* UIColor+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B0D143921FF10F600821EC5 /* UIColor+Extension.m */; };
 		8B19D61922168F49004C075F /* SYCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B19D61822168F49004C075F /* SYCardView.m */; };
@@ -26,6 +25,7 @@
 		8B7C4AD621DCB05400C4FEC6 /* Demo1TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B7C4AD221DCB05400C4FEC6 /* Demo1TableViewCell.m */; };
 		8B7C4AD721DCB05400C4FEC6 /* Demo1TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B7C4AD421DCB05400C4FEC6 /* Demo1TableViewCell.xib */; };
 		8B8550232238FB88008D58AC /* RotationLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8550222238FB88008D58AC /* RotationLayout.m */; };
+		8B9D1590223A42B300316A94 /* NSDateTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B9D158F223A42B300316A94 /* NSDateTest.m */; };
 		8B9DBE552238A2A800AE5DCF /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B9DBE542238A2A800AE5DCF /* NotificationCenter.framework */; };
 		8B9DBE592238A2A800AE5DCF /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B9DBE582238A2A800AE5DCF /* TodayViewController.m */; };
 		8B9DBE5C2238A2A800AE5DCF /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B9DBE5A2238A2A800AE5DCF /* MainInterface.storyboard */; };
@@ -84,7 +84,6 @@
 		8B01DB9B22379E83009B77E2 /* NSDate+index.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+index.m"; sourceTree = "<group>"; };
 		8B01DBE72237AFC1009B77E2 /* UP2019Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UP2019Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B01DBEB2237AFC1009B77E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8B01DBF12237AFD0009B77E2 /* UP2019Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UP2019Tests.m; sourceTree = "<group>"; };
 		8B01DBF32237E23A009B77E2 /* LineProcessView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LineProcessView.h; sourceTree = "<group>"; };
 		8B01DBF42237E23A009B77E2 /* LineProcessView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LineProcessView.m; sourceTree = "<group>"; };
 		8B0D143821FF10F600821EC5 /* UIColor+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Extension.h"; sourceTree = "<group>"; };
@@ -113,6 +112,7 @@
 		8B7C4AD421DCB05400C4FEC6 /* Demo1TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Demo1TableViewCell.xib; sourceTree = "<group>"; };
 		8B8550212238FB88008D58AC /* RotationLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RotationLayout.h; sourceTree = "<group>"; };
 		8B8550222238FB88008D58AC /* RotationLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RotationLayout.m; sourceTree = "<group>"; };
+		8B9D158F223A42B300316A94 /* NSDateTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSDateTest.m; sourceTree = "<group>"; };
 		8B9DBE532238A2A800AE5DCF /* process.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = process.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B9DBE542238A2A800AE5DCF /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 		8B9DBE572238A2A800AE5DCF /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
@@ -205,8 +205,8 @@
 		8B01DBE82237AFC1009B77E2 /* UP2019Tests */ = {
 			isa = PBXGroup;
 			children = (
-				8B01DBF12237AFD0009B77E2 /* UP2019Tests.m */,
 				8B01DBEB2237AFC1009B77E2 /* Info.plist */,
+				8B9D158F223A42B300316A94 /* NSDateTest.m */,
 			);
 			path = UP2019Tests;
 			sourceTree = "<group>";
@@ -586,7 +586,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B01DBF22237AFD0009B77E2 /* UP2019Tests.m in Sources */,
+				8B9D1590223A42B300316A94 /* NSDateTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
