@@ -1,0 +1,60 @@
+
+
+usage() {
+    echo "usage: changeBlankTo_ [-d TARGETDIR]"
+    echo "将 TARGETDIR 路径下的，文件名中包含的空格修改为下划线"
+    echo "        -d,                 目标路径"
+    echo "        -h,                 帮助"
+
+}
+change() {
+    for file in `find . -name '* *'`
+    do
+        newfile=`echo $file | sed 's/ /_/g'`
+        mv $file $newfile
+
+    done
+    `open .`
+}
+
+if [ $# -lt 1 ]; then
+    usage
+    exit 1
+fi
+
+while getopts "d:h" opt; do
+    case $opt in
+        d) target=$OPTARG;;
+        h) usage; exit 1;;
+    esac
+done
+
+if [ -z $target ]; then
+    echo "请输入目标地址!"
+    exit 1
+fi
+
+cd $target
+echo '当前路径位于：'
+address=`pwd`
+echo  "\033[41;36m $address \033[0m" 
+
+IFS=$'\n'
+echo '包含空格的文件如下：\n'
+for file in `find . -name '* *'`
+do
+    newfile=`echo $file | sed 's/ /_/g'`
+    echo '原文件名为:'$file 
+    echo '修改后的文件名为:'$newfile'\n'
+done
+
+read -p '输入0继续操作，其他退出操作' event
+
+if [ "$event" = "0" ] 
+then
+    change
+else
+    echo '输入值为 '$event' 退出操作。'
+    exit 1	
+fi
+
