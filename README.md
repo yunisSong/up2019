@@ -1,6 +1,11 @@
 # up2019
 up!up!up!
 
+### 脚本
+
+[打包脚本](./Shell|Python/打包脚本)
+[去除文件名中的空格](./Shell|Python/去除文件名中的空格/changeBlankTo_)
+
 
 ### medium 
 
