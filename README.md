@@ -21,6 +21,17 @@ up!up!up!
 
 [929](./LeetCode/929.py)
 
+[237](./LeetCode/237/Solution.java)
+
+[804](./LeetCode/804/Solution.java)
+
+[832](./LeetCode/832/Solution.java)
+
+[942](./LeetCode/942/Solution.java)
+
+[977](./LeetCode/977/Solution.java)
+
+
 ### iOS
 [视觉差动画](./iOS/UP2019/UP2019/视觉差动画)
 
