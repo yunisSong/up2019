@@ -15,21 +15,8 @@ up!up!up!
 [How_to_automate_CI_for_any_iOS_Project](./medium/How_to_automate_CI_for_any_iOS_Project.md) 
 
 ### 算法
-[7](./LeetCode/7.py)
+[LeetCode](./LeetCode)
 
-[682](./LeetCode/682.py)
-
-[929](./LeetCode/929.py)
-
-[237](./LeetCode/237/Solution.java)
-
-[804](./LeetCode/804/Solution.java)
-
-[832](./LeetCode/832/Solution.java)
-
-[942](./LeetCode/942/Solution.java)
-
-[977](./LeetCode/977/Solution.java)
 
 
 ### iOS
