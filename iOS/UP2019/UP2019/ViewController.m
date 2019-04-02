@@ -22,11 +22,7 @@
     [self.tab registerClass:[UITableViewCell class] forCellReuseIdentifier:@"UP2019"];
     self.tab.delegate = self;
     self.tab.dataSource = self;
-
-    
-
 }
-
 #pragma mark - Delegate
 //代理方法
 #pragma mark -
@@ -69,6 +65,7 @@
                              @{@"title":@"自定义卡片视图",@"class":@"CardViewController"},
                              @{@"title":@"日期百分比",@"class":@"SYYearViewController"},
                              @{@"title":@"瀑布流",@"class":@"LayoutDemoViewController"},
+                             @{@"title":@"可点击label",@"class":@"RTFViewController"},
 
                              ];
             arr;

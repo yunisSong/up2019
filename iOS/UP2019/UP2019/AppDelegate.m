@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "JPFPSStatus.h"
+
 @interface AppDelegate ()
 
 @end
@@ -20,8 +21,6 @@
 #if defined(DEBUG)||defined(_DEBUG)
     [[JPFPSStatus sharedInstance] open];
 #endif
-
-    
     return YES;
 }
 

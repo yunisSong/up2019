@@ -11,6 +11,8 @@
 #import <Masonry.h>
 #import "MBProgressHUD+show.h"
 #import "UIColor+Extension.h"
+
+
 #define HUDLoading(loading,view) [MBProgressHUD showLoadingWithMessage:loading toView:view]
 #define WS(weakSelf)  __weak __typeof(&*self)weakSelf = self;
 
