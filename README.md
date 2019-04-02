@@ -1,6 +1,8 @@
 # up2019
 up!up!up!
 
+[TOC]
+
 ### 脚本
 
 [打包脚本](./Shell|Python/打包脚本)
@@ -146,7 +148,7 @@ up!up!up!
 
 #### [可点击Label](./iOS/UP2019/UP2019/可点击Label)
 
-
+使用如下：
 ```
     SYTouchLabel *label = [[SYTouchLabel alloc] init];
     label.lineBreakMode = NSLineBreakByCharWrapping;
@@ -165,4 +167,24 @@ up!up!up!
         NSLog(@"点击的文本为 %@",clickString);
     };
 ```
+关键点就是根据当前点击的位置计算出位于文本的位置。
 
+
+```
+- (NSInteger)characterIndexAtPoint:(CGPoint)location
+{
+    NSMutableAttributedString *attributedText = [[NSMutableAttributedString alloc] initWithAttributedString:self.attributedText];
+    NSTextStorage *textStorage = [[NSTextStorage alloc] initWithAttributedString:attributedText];
+    NSLayoutManager *layoutManager = [[NSLayoutManager alloc] init];
+    [textStorage addLayoutManager:layoutManager];
+    NSTextContainer *textContainer = [[NSTextContainer alloc] initWithSize:CGSizeMake(CGRectGetWidth(self.bounds), CGFLOAT_MAX)];
+    textContainer.maximumNumberOfLines = 100;
+    textContainer.lineBreakMode = self.lineBreakMode;
+    textContainer.lineFragmentPadding = 0.0;
+    [layoutManager addTextContainer:textContainer];
+    NSUInteger characterIndex = [layoutManager characterIndexForPoint:location
+                                                      inTextContainer:textContainer
+                             fractionOfDistanceBetweenInsertionPoints:NULL];
+    return characterIndex;
+}
+```
