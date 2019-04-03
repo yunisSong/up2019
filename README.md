@@ -146,7 +146,7 @@ up!up!up!
 
 关键点就是计算出当前日期是当前年、月的第几天。
 
-#### [可点击Label](./iOS/UP2019/UP2019/可点击Label)
+#### [可点击Label](https://github.com/yunisSong/SYTouchLabel)
 
 可使用 `CocoaPods` 集成使用。
 
