@@ -8,7 +8,7 @@
 
 #import "RTFViewController.h"
 
-#import "SYTouchLabel.h"
+#import <SYTouchLabel.h>
 @interface RTFViewController ()
 
 @end

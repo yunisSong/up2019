@@ -18,12 +18,13 @@ PODS:
   - JPFPSStatus (0.1.1)
   - Masonry (1.1.0)
   - MBProgressHUD (0.9.2)
-  - MJExtension (3.0.15.1)
+  - MJExtension (3.0.16)
   - MJRefresh (3.1.15.7)
   - PPCounter (0.6.0)
-  - SDWebImage (4.4.2):
-    - SDWebImage/Core (= 4.4.2)
-  - SDWebImage/Core (4.4.2)
+  - SDWebImage (5.0.0):
+    - SDWebImage/Core (= 5.0.0)
+  - SDWebImage/Core (5.0.0)
+  - SYTouchLabel (0.0.4)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.2.1)
@@ -35,6 +36,7 @@ DEPENDENCIES:
   - MJRefresh (~> 3.1.15.3)
   - PPCounter (from `https://github.com/jkpang/PPCounter.git`)
   - SDWebImage
+  - SYTouchLabel
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -46,6 +48,7 @@ SPEC REPOS:
     - MJExtension
     - MJRefresh
     - SDWebImage
+    - SYTouchLabel
 
 EXTERNAL SOURCES:
   PPCounter:
@@ -62,11 +65,12 @@ SPEC CHECKSUMS:
   JPFPSStatus: 03f32aa3d4d7d0c5bf56f6f3e7cf8b7280a5f52c
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
-  MJExtension: 19bc33ce2eee2d319760f5622562cf581a6ff756
+  MJExtension: 54dbbf6ee728f1a88e9aad904353d007831c7847
   MJRefresh: 697f8ec75ebdbe9207767bb682cf0f51b0d8a41f
   PPCounter: da37c0d8bfeeffe7ef4c331468203e17f2e30fbf
-  SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
+  SDWebImage: 5de80a0302de9e377e62f47d2fa1304efff0e55f
+  SYTouchLabel: 7878f60f589a85368963c2910ef5e0418355960e
 
-PODFILE CHECKSUM: 5e8ea33e3541783924ab2b17e8a7d46e252de675
+PODFILE CHECKSUM: 355be19b10dc69b6ec4a8bd0b2e529b5bf91712f
 
 COCOAPODS: 1.5.3
