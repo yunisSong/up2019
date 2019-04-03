@@ -148,6 +148,12 @@ up!up!up!
 
 #### [可点击Label](./iOS/UP2019/UP2019/可点击Label)
 
+可使用 `CocoaPods` 集成使用。
+
+```
+pod 'SYTouchLabel'
+```
+
 使用如下：
 ```
     SYTouchLabel *label = [[SYTouchLabel alloc] init];
