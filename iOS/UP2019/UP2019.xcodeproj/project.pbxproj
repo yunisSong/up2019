@@ -42,7 +42,6 @@
 		8BD0F9A321F73F2D00D3F48A /* CityTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BD0F99721F73F2D00D3F48A /* CityTableViewCell.xib */; };
 		8BD0F9A421F73F2D00D3F48A /* CityModel+info.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BD0F99A21F73F2D00D3F48A /* CityModel+info.m */; };
 		8BD0F9A521F73F2D00D3F48A /* CityModel+index.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BD0F99D21F73F2D00D3F48A /* CityModel+index.m */; };
-		8BD26F222252EF1D00590CEB /* SYTouchLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BD26F212252EF1D00590CEB /* SYTouchLabel.m */; };
 		8BF0AC6F22155CEB00849983 /* CardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BF0AC6E22155CEB00849983 /* CardViewController.m */; };
 		8BF7E13121F8360200FC0296 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 8BF7E13021F8360200FC0296 /* data.json */; };
 		8BFCE19422437280006B3BAC /* RTFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BFCE19322437280006B3BAC /* RTFViewController.m */; };
@@ -138,8 +137,6 @@
 		8BD0F99B21F73F2D00D3F48A /* CityModel+index.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CityModel+index.h"; sourceTree = "<group>"; };
 		8BD0F99C21F73F2D00D3F48A /* CityModel+info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CityModel+info.h"; sourceTree = "<group>"; };
 		8BD0F99D21F73F2D00D3F48A /* CityModel+index.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CityModel+index.m"; sourceTree = "<group>"; };
-		8BD26F202252EF1D00590CEB /* SYTouchLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYTouchLabel.h; sourceTree = "<group>"; };
-		8BD26F212252EF1D00590CEB /* SYTouchLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYTouchLabel.m; sourceTree = "<group>"; };
 		8BF0AC6D22155CEB00849983 /* CardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CardViewController.h; sourceTree = "<group>"; };
 		8BF0AC6E22155CEB00849983 /* CardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CardViewController.m; sourceTree = "<group>"; };
 		8BF7E13021F8360200FC0296 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
@@ -409,8 +406,6 @@
 			children = (
 				8BFCE19222437280006B3BAC /* RTFViewController.h */,
 				8BFCE19322437280006B3BAC /* RTFViewController.m */,
-				8BD26F202252EF1D00590CEB /* SYTouchLabel.h */,
-				8BD26F212252EF1D00590CEB /* SYTouchLabel.m */,
 			);
 			path = "可点击Label";
 			sourceTree = "<group>";
@@ -615,7 +610,6 @@
 				8B01DB9822379E15009B77E2 /* SYYearViewController.m in Sources */,
 				8BD0F9A421F73F2D00D3F48A /* CityModel+info.m in Sources */,
 				8BD0F9A221F73F2D00D3F48A /* CityTableViewCell.m in Sources */,
-				8BD26F222252EF1D00590CEB /* SYTouchLabel.m in Sources */,
 				8B19D61922168F49004C075F /* SYCardView.m in Sources */,
 				8BF0AC6F22155CEB00849983 /* CardViewController.m in Sources */,
 				8B0D143A21FF10F600821EC5 /* UIColor+Extension.m in Sources */,
