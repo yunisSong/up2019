@@ -657,7 +657,21 @@ static BOOL aspect_isSelectorAllowedAndTrack(NSObject *self, SEL selector, Aspec
         }
 
         /*
-            判断继承链上是否已经有类 hook 这个方法了。
+            判断继承链上向父类查找是否已经有类 hook 这个方法了。
+         
+             Class currentClass      = object_getClass([UITableViewCell class]);
+             NSLog(@"currentClass == %@",currentClass);//UITableViewCell
+             do {
+                NSLog(@"class_getSuperclass == %@",currentClass);
+                //UITableViewCell
+                //UIView
+                //UIResponder
+                //NSObject
+                //NSObject
+             } while ((currentClass = class_getSuperclass(currentClass)));
+         
+            当已经找到继承链的顶端后，class_getSuperclass 获取的数据为 null ，跳出循环。
+         
          */
         do {
             //获取 AspectTracker
@@ -677,23 +691,40 @@ static BOOL aspect_isSelectorAllowedAndTrack(NSObject *self, SEL selector, Aspec
         } while ((currentClass = class_getSuperclass(currentClass)));
 
         // Add the selector as being modified.
+        /*
+         经过上面的循环，发现继承链上没有 hook 这个方法，
+         此时 currentClass 已经变为 null ，从新赋值为最初的值。
+         */
         currentClass = klass;
         AspectTracker *subclassTracker = nil;
+        /*
+         
+         继续在继承链上设置 hook 关系。
+         每循环一次
+            currentClass 变为 父类
+            subclassTracker 就赋值为上一次 currentClass 获取的 AspectTracker，
+         */
         do {
+            //从全局缓存的字典中获取 AspectTracker
             tracker = swizzledClassesDict[currentClass];
+            //如果 AspectTracker 为空
             if (!tracker) {
+                // 根据 currentClass 生成 AspectTracker 实例，并缓存在全局的字典里
                 tracker = [[AspectTracker alloc] initWithTrackedClass:currentClass];
                 swizzledClassesDict[(id<NSCopying>)currentClass] = tracker;
             }
             if (subclassTracker) {
+                //如果 subclassTracker 存在 tracker 的根据 selectorName 存储的 set 中，添加subclassTracker
                 [tracker addSubclassTracker:subclassTracker hookingSelectorName:selectorName];
             } else {
+                // 把 selectorName 放入已经 hook 的集合里面
                 [tracker.selectorNames addObject:selectorName];
             }
 
             // All superclasses get marked as having a subclass that is modified.
             subclassTracker = tracker;
         }while ((currentClass = class_getSuperclass(currentClass)));
+        
 	} else {
         // 如果是实例对象，返回 YES
 		return YES;
