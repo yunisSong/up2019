@@ -5,10 +5,19 @@
 //  Created by Yunis on 2019/2/14.
 //  Copyright © 2019年 Yunis. All rights reserved.
 //
-
+/*
+ 模仿 https://github.com/QiShare/QiCardView
+ 
+ view
+ delegate datasource 设置初始化数据
+ 
+ cell
+ layout 数据
+ 
+ */
 #import "CardViewController.h"
-
-@interface CardViewController ()
+#import "SYCardView.h"
+@interface CardViewController ()<SYCardViewDataSource>
 
 @end
 
@@ -40,7 +49,8 @@
 }
 
 - (void)loadSubViews {
-    
+    SYCardView *cardView = [[SYCardView alloc]  init];
+    cardView.dataSource = self;
 }
 
 
@@ -59,7 +69,14 @@
 
 #pragma mark - Delegate
 //代理方法
-
+- (NSInteger)numberOfCountInSYCardView:(SYCardView *)cardView
+{
+    return 3;
+}
+- (SYCardViewCell *)cardView:(SYCardView *)cardView cellForRowAtIndex:(NSInteger *)index
+{
+    return [SYCardViewCell new];
+}
 
 #pragma mark - Lazy Loads
 

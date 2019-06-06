@@ -225,6 +225,45 @@
 			path = CardView;
 			sourceTree = "<group>";
 		};
+		8B26740C229BBEB400AD5CAA /* 通用视图 */ = {
+			isa = PBXGroup;
+			children = (
+				8B26740E229BBEE400AD5CAA /* Controller */,
+				8B26740D229BBEE400AD5CAA /* Help */,
+				8B26740F229BBEE400AD5CAA /* Model */,
+				8B267410229BBEE400AD5CAA /* View */,
+			);
+			path = "通用视图";
+			sourceTree = "<group>";
+		};
+		8B26740D229BBEE400AD5CAA /* Help */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Help;
+			sourceTree = "<group>";
+		};
+		8B26740E229BBEE400AD5CAA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8B26740F229BBEE400AD5CAA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8B267410229BBEE400AD5CAA /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		8B79C6F321F712E600EB2845 /* Public */ = {
 			isa = PBXGroup;
 			children = (
@@ -266,6 +305,7 @@
 				8B7C4ABB21DC951F00C4FEC6 /* ViewController.h */,
 				8B7C4ABC21DC951F00C4FEC6 /* ViewController.m */,
 				8B79C6F321F712E600EB2845 /* Public */,
+				8B26740C229BBEB400AD5CAA /* 通用视图 */,
 				8B7C4ACF21DCB02200C4FEC6 /* 视觉差动画 */,
 				8BFFD40121F068C2006863D9 /* 多级菜单 */,
 				8BF0AC6822155CD500849983 /* 自定义卡片视图 */,
