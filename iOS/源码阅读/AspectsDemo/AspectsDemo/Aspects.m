@@ -527,6 +527,7 @@ for (AspectIdentifier *aspect in aspects) {\
         aspectsToRemove = [aspectsToRemove?:@[] arrayByAddingObject:aspect]; \
     } \
 }
+aspect.options & AspectOptionAutomaticRemoval 计算出hook选项为AspectOptionAutomaticRemoval，加入到数组中
 
 // This is the swizzled forwardInvocation: method.
 static void __ASPECTS_ARE_BEING_CALLED__(__unsafe_unretained NSObject *self, SEL selector, NSInvocation *invocation) {
@@ -569,7 +570,6 @@ static void __ASPECTS_ARE_BEING_CALLED__(__unsafe_unretained NSObject *self, SEL
             }
         }while (!respondsToAlias && (klass = class_getSuperclass(klass)));
     }
-
     // After hooks.
     // AspectPositionAfter 选项的方法，在 hook 方法执行后调用
     aspect_invoke(classContainer.afterAspects, info);
@@ -588,6 +588,7 @@ static void __ASPECTS_ARE_BEING_CALLED__(__unsafe_unretained NSObject *self, SEL
         }
     }
 
+    NSLog(@"aspectsToRemove == %@",aspectsToRemove);
     // Remove any hooks that are queued for deregistration.
     [aspectsToRemove makeObjectsPerformSelector:@selector(remove)];
 }
@@ -660,9 +661,11 @@ static BOOL aspect_isSelectorAllowedAndTrack(NSObject *self, SEL selector, Aspec
     AspectOptions position = options&AspectPositionFilter;
     /*
      AspectPositionFilter == 0x07 转为为二进制位 0000 0000 0000 0111
-     AspectOptions 选项值分别为 0、1、2、3，
+     AspectOptions 选项值分别为 0、1、2、8，
      AspectOptionAutomaticRemoval = 1 << 3  就是1 的二进制左移3位 变成 8
 
+     这样可以快速的计算出当前选项值。
+     
      转为二进制
      AspectPositionAfter            0000 0000 0000 0000
      AspectPositionInstead          0000 0000 0000 0001
@@ -671,14 +674,20 @@ static BOOL aspect_isSelectorAllowedAndTrack(NSObject *self, SEL selector, Aspec
      
     上面这个几个值 分别于 AspectPositionFilter 进行 & 位运算后等到值
      
-     
      AspectPositionAfter          &AspectPositionFilter         0000 0000 0000 0000
      AspectPositionInstead        &AspectPositionFilter         0000 0000 0000 0001
      AspectPositionBefore         &AspectPositionFilter         0000 0000 0000 0010
-     AspectOptionAutomaticRemoval &AspectPositionFilter         0000 0000 0000 1000
+     AspectOptionAutomaticRemoval &AspectPositionFilter         0000 0000 0000 0010
+
      
- 
-     这样可以快速的计算出当前值
+     if (aspect.options & AspectOptionAutomaticRemoval) 可以计算出 这里是为了计算出那些是运行后就移除的。
+     
+     AspectPositionAfter          &AspectPositionFilter             0000 0000 0000 0000
+     AspectPositionInstead        &AspectPositionFilter             0000 0000 0000 0000
+     AspectPositionBefore         &AspectPositionFilter             0000 0000 0000 0000
+     AspectOptionAutomaticRemoval &AspectOptionAutomaticRemoval     0000 0000 0000 1000
+     
+     
      */
     
     //只能 在 dealloc 前 跟踪
