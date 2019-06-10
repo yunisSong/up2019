@@ -527,7 +527,6 @@ for (AspectIdentifier *aspect in aspects) {\
         aspectsToRemove = [aspectsToRemove?:@[] arrayByAddingObject:aspect]; \
     } \
 }
-aspect.options & AspectOptionAutomaticRemoval 计算出hook选项为AspectOptionAutomaticRemoval，加入到数组中
 
 // This is the swizzled forwardInvocation: method.
 static void __ASPECTS_ARE_BEING_CALLED__(__unsafe_unretained NSObject *self, SEL selector, NSInvocation *invocation) {
