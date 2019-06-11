@@ -9,8 +9,6 @@
 #import "AspectsAppDelegate.h"
 #import "AspectsViewController.h"
 #import "Aspects.h"
-#define AspectPositionFilter111 0x07
-
 @implementation AspectsAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
@@ -20,15 +18,8 @@
     self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:aspectsController];
     [self.window makeKeyAndVisible];
 
-    NSLog(@"AspectPositionAfter == %lx",AspectPositionAfter & AspectPositionFilter111);
-    NSLog(@"AspectOptionAutomaticRemoval == %lx",AspectOptionAutomaticRemoval & AspectPositionFilter111);
-
     // Ignore hooks when we are testing.
     if (!NSClassFromString(@"XCTestCase")) {
-//        [aspectsController aspect_hookSelector:@selector(buttonPressed:) withOptions:0 usingBlock:^(id info, id sender) {
-//            NSLog(@"Button was pressed by: %@", sender);
-//        } error:NULL];
-        
         [aspectsController aspect_hookSelector:@selector(buttonPressed:) withOptions:AspectPositionAfter usingBlock:^(id info, id sender) {
             NSLog(@"Button was pressed by: %@", sender);
         } error:NULL];

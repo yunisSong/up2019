@@ -318,7 +318,7 @@ static void aspect_prepareClassAndHookSelector(NSObject *self, SEL selector, NSE
         }
 
         // We use forwardInvocation to hook in.
-        //将原有的方法实现 替换为 forwardInvocation 的实现。每次调用 这个方法，相当用调用 forwardInvocation：
+        //将原有的方法实现 替换为 _objc_msgForward 。每次调用 这个方法，就进行了消息转发，相当用调用 forwardInvocation：
         //上面 forwardInvocation 已经被替换为 __ASPECTS_ARE_BEING_CALLED__ 方法
         //所以以后每次调用 selector 就是调用 __ASPECTS_ARE_BEING_CALLED__
         class_replaceMethod(klass, selector, aspect_getMsgForwardIMP(self, selector), typeEncoding);
