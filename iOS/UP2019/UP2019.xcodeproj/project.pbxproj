@@ -42,6 +42,8 @@
 		8BD0F9A321F73F2D00D3F48A /* CityTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BD0F99721F73F2D00D3F48A /* CityTableViewCell.xib */; };
 		8BD0F9A421F73F2D00D3F48A /* CityModel+info.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BD0F99A21F73F2D00D3F48A /* CityModel+info.m */; };
 		8BD0F9A521F73F2D00D3F48A /* CityModel+index.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BD0F99D21F73F2D00D3F48A /* CityModel+index.m */; };
+		8BDFC08822AF99EA00134DE6 /* NSInvocationTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BDFC08722AF99EA00134DE6 /* NSInvocationTestViewController.m */; };
+		8BDFC08E22AF9C2400134DE6 /* UIViewController+backgroundColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BDFC08D22AF9C2400134DE6 /* UIViewController+backgroundColor.m */; };
 		8BF0AC6F22155CEB00849983 /* CardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BF0AC6E22155CEB00849983 /* CardViewController.m */; };
 		8BF7E13121F8360200FC0296 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 8BF7E13021F8360200FC0296 /* data.json */; };
 		8BFCE19422437280006B3BAC /* RTFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BFCE19322437280006B3BAC /* RTFViewController.m */; };
@@ -137,6 +139,10 @@
 		8BD0F99B21F73F2D00D3F48A /* CityModel+index.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CityModel+index.h"; sourceTree = "<group>"; };
 		8BD0F99C21F73F2D00D3F48A /* CityModel+info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CityModel+info.h"; sourceTree = "<group>"; };
 		8BD0F99D21F73F2D00D3F48A /* CityModel+index.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CityModel+index.m"; sourceTree = "<group>"; };
+		8BDFC08622AF99EA00134DE6 /* NSInvocationTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSInvocationTestViewController.h; sourceTree = "<group>"; };
+		8BDFC08722AF99EA00134DE6 /* NSInvocationTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSInvocationTestViewController.m; sourceTree = "<group>"; };
+		8BDFC08C22AF9C2400134DE6 /* UIViewController+backgroundColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+backgroundColor.h"; sourceTree = "<group>"; };
+		8BDFC08D22AF9C2400134DE6 /* UIViewController+backgroundColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+backgroundColor.m"; sourceTree = "<group>"; };
 		8BF0AC6D22155CEB00849983 /* CardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CardViewController.h; sourceTree = "<group>"; };
 		8BF0AC6E22155CEB00849983 /* CardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CardViewController.m; sourceTree = "<group>"; };
 		8BF7E13021F8360200FC0296 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
@@ -267,6 +273,8 @@
 		8B79C6F321F712E600EB2845 /* Public */ = {
 			isa = PBXGroup;
 			children = (
+				8BDFC08C22AF9C2400134DE6 /* UIViewController+backgroundColor.h */,
+				8BDFC08D22AF9C2400134DE6 /* UIViewController+backgroundColor.m */,
 				8B79C6F421F712FE00EB2845 /* MBProgressHUD+show.h */,
 				8B79C6F521F712FE00EB2845 /* MBProgressHUD+show.m */,
 				8B0D143821FF10F600821EC5 /* UIColor+Extension.h */,
@@ -312,6 +320,7 @@
 				8B01DB9422379DEA009B77E2 /* 日期百分比 */,
 				8B9DBE6B2238F46800AE5DCF /* 瀑布流 */,
 				8BFCE1912243724B006B3BAC /* 可点击Label */,
+				8BDFC08522AF99C200134DE6 /* NSInvocationDemo */,
 				8B7C4ABE21DC951F00C4FEC6 /* Main.storyboard */,
 				8B7C4AC121DC952100C4FEC6 /* Assets.xcassets */,
 				8B7C4AC321DC952100C4FEC6 /* LaunchScreen.storyboard */,
@@ -397,6 +406,15 @@
 				8BD0F99A21F73F2D00D3F48A /* CityModel+info.m */,
 			);
 			path = Help;
+			sourceTree = "<group>";
+		};
+		8BDFC08522AF99C200134DE6 /* NSInvocationDemo */ = {
+			isa = PBXGroup;
+			children = (
+				8BDFC08622AF99EA00134DE6 /* NSInvocationTestViewController.h */,
+				8BDFC08722AF99EA00134DE6 /* NSInvocationTestViewController.m */,
+			);
+			path = NSInvocationDemo;
 			sourceTree = "<group>";
 		};
 		8BF0AC6822155CD500849983 /* 自定义卡片视图 */ = {
@@ -649,6 +667,7 @@
 			files = (
 				8B01DB9822379E15009B77E2 /* SYYearViewController.m in Sources */,
 				8BD0F9A421F73F2D00D3F48A /* CityModel+info.m in Sources */,
+				8BDFC08822AF99EA00134DE6 /* NSInvocationTestViewController.m in Sources */,
 				8BD0F9A221F73F2D00D3F48A /* CityTableViewCell.m in Sources */,
 				8B19D61922168F49004C075F /* SYCardView.m in Sources */,
 				8BF0AC6F22155CEB00849983 /* CardViewController.m in Sources */,
@@ -657,6 +676,7 @@
 				8B79C6F621F712FE00EB2845 /* MBProgressHUD+show.m in Sources */,
 				8B9DBE6E2238F49B00AE5DCF /* LayoutDemoViewController.m in Sources */,
 				8BD0F9A021F73F2D00D3F48A /* CityModel.m in Sources */,
+				8BDFC08E22AF9C2400134DE6 /* UIViewController+backgroundColor.m in Sources */,
 				8B7C4AD621DCB05400C4FEC6 /* Demo1TableViewCell.m in Sources */,
 				8B01DB9C22379E83009B77E2 /* NSDate+index.m in Sources */,
 				8BD0F99F21F73F2D00D3F48A /* BaseModel.m in Sources */,

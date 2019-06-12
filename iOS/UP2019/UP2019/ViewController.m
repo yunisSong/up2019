@@ -66,7 +66,7 @@
                              @{@"title":@"日期百分比",@"class":@"SYYearViewController"},
                              @{@"title":@"瀑布流",@"class":@"LayoutDemoViewController"},
                              @{@"title":@"可点击label",@"class":@"RTFViewController"},
-
+                             @{@"title":@"NSInvocation",@"class":@"NSInvocationTestViewController"},
                              ];
             arr;
         });
