@@ -166,6 +166,7 @@ static NSMethodSignature *tbv_signatureForBlock(id block) {
     blockInvocation.target = yunisBlock;
     /*
      methodSignature 第一个参数是返回类型 第二个参数才是真正的参数
+     `block` 的签名不像 `select`， 第一个参数是返回类型，第二个参数才是真正的参数，并不像 `select` 第二个参数是 `:` 代表 `SEL`.
      */
     for (int idx = 1; idx < methodSignature.numberOfArguments; idx++) {
         
