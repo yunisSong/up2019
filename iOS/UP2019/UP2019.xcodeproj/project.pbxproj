@@ -44,6 +44,9 @@
 		8BD0F9A521F73F2D00D3F48A /* CityModel+index.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BD0F99D21F73F2D00D3F48A /* CityModel+index.m */; };
 		8BDFC08822AF99EA00134DE6 /* NSInvocationTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BDFC08722AF99EA00134DE6 /* NSInvocationTestViewController.m */; };
 		8BDFC08E22AF9C2400134DE6 /* UIViewController+backgroundColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BDFC08D22AF9C2400134DE6 /* UIViewController+backgroundColor.m */; };
+		8BDFC09222B2382C00134DE6 /* KVODemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BDFC09122B2382C00134DE6 /* KVODemoViewController.m */; };
+		8BDFC09522B2387B00134DE6 /* SYKVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BDFC09422B2387B00134DE6 /* SYKVO.m */; };
+		8BDFC09822B37D5B00134DE6 /* KVOTestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BDFC09722B37D5B00134DE6 /* KVOTestModel.m */; };
 		8BF0AC6F22155CEB00849983 /* CardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BF0AC6E22155CEB00849983 /* CardViewController.m */; };
 		8BF7E13121F8360200FC0296 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 8BF7E13021F8360200FC0296 /* data.json */; };
 		8BFCE19422437280006B3BAC /* RTFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BFCE19322437280006B3BAC /* RTFViewController.m */; };
@@ -143,6 +146,12 @@
 		8BDFC08722AF99EA00134DE6 /* NSInvocationTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSInvocationTestViewController.m; sourceTree = "<group>"; };
 		8BDFC08C22AF9C2400134DE6 /* UIViewController+backgroundColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+backgroundColor.h"; sourceTree = "<group>"; };
 		8BDFC08D22AF9C2400134DE6 /* UIViewController+backgroundColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+backgroundColor.m"; sourceTree = "<group>"; };
+		8BDFC09022B2382C00134DE6 /* KVODemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVODemoViewController.h; sourceTree = "<group>"; };
+		8BDFC09122B2382C00134DE6 /* KVODemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVODemoViewController.m; sourceTree = "<group>"; };
+		8BDFC09322B2387B00134DE6 /* SYKVO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYKVO.h; sourceTree = "<group>"; };
+		8BDFC09422B2387B00134DE6 /* SYKVO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYKVO.m; sourceTree = "<group>"; };
+		8BDFC09622B37D5B00134DE6 /* KVOTestModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVOTestModel.h; sourceTree = "<group>"; };
+		8BDFC09722B37D5B00134DE6 /* KVOTestModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVOTestModel.m; sourceTree = "<group>"; };
 		8BF0AC6D22155CEB00849983 /* CardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CardViewController.h; sourceTree = "<group>"; };
 		8BF0AC6E22155CEB00849983 /* CardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CardViewController.m; sourceTree = "<group>"; };
 		8BF7E13021F8360200FC0296 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
@@ -321,6 +330,7 @@
 				8B9DBE6B2238F46800AE5DCF /* 瀑布流 */,
 				8BFCE1912243724B006B3BAC /* 可点击Label */,
 				8BDFC08522AF99C200134DE6 /* NSInvocationDemo */,
+				8BDFC08F22B2380700134DE6 /* SYKVO */,
 				8B7C4ABE21DC951F00C4FEC6 /* Main.storyboard */,
 				8B7C4AC121DC952100C4FEC6 /* Assets.xcassets */,
 				8B7C4AC321DC952100C4FEC6 /* LaunchScreen.storyboard */,
@@ -415,6 +425,19 @@
 				8BDFC08722AF99EA00134DE6 /* NSInvocationTestViewController.m */,
 			);
 			path = NSInvocationDemo;
+			sourceTree = "<group>";
+		};
+		8BDFC08F22B2380700134DE6 /* SYKVO */ = {
+			isa = PBXGroup;
+			children = (
+				8BDFC09022B2382C00134DE6 /* KVODemoViewController.h */,
+				8BDFC09122B2382C00134DE6 /* KVODemoViewController.m */,
+				8BDFC09322B2387B00134DE6 /* SYKVO.h */,
+				8BDFC09422B2387B00134DE6 /* SYKVO.m */,
+				8BDFC09622B37D5B00134DE6 /* KVOTestModel.h */,
+				8BDFC09722B37D5B00134DE6 /* KVOTestModel.m */,
+			);
+			path = SYKVO;
 			sourceTree = "<group>";
 		};
 		8BF0AC6822155CD500849983 /* 自定义卡片视图 */ = {
@@ -671,6 +694,8 @@
 				8BD0F9A221F73F2D00D3F48A /* CityTableViewCell.m in Sources */,
 				8B19D61922168F49004C075F /* SYCardView.m in Sources */,
 				8BF0AC6F22155CEB00849983 /* CardViewController.m in Sources */,
+				8BDFC09522B2387B00134DE6 /* SYKVO.m in Sources */,
+				8BDFC09222B2382C00134DE6 /* KVODemoViewController.m in Sources */,
 				8B0D143A21FF10F600821EC5 /* UIColor+Extension.m in Sources */,
 				8B9DBE712238F4D100AE5DCF /* LayoutDemo1.m in Sources */,
 				8B79C6F621F712FE00EB2845 /* MBProgressHUD+show.m in Sources */,
@@ -681,6 +706,7 @@
 				8B01DB9C22379E83009B77E2 /* NSDate+index.m in Sources */,
 				8BD0F99F21F73F2D00D3F48A /* BaseModel.m in Sources */,
 				8BD0F99E21F73F2D00D3F48A /* ListViewController.m in Sources */,
+				8BDFC09822B37D5B00134DE6 /* KVOTestModel.m in Sources */,
 				8B7C4ABD21DC951F00C4FEC6 /* ViewController.m in Sources */,
 				8B8550232238FB88008D58AC /* RotationLayout.m in Sources */,
 				8B7C4AD521DCB05400C4FEC6 /* Demo1ViewController.m in Sources */,
