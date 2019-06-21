@@ -36,8 +36,8 @@
     
     model.name = @"wwwwwwwww";
     model.address = @"~~~~~~~~~~~~~~~~~";
+    
 
 }
-
 
 @end

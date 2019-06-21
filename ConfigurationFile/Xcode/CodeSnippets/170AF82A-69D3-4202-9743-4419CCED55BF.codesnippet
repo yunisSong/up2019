@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>zzviewtemplate</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>#pragma mark - Life Cycle
+//系统方法
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    //加载页面
+    [self assignDate];
+    [self settingAppearance];
+    [self loadSubViews];
+    
+}
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    //布局
+}
+#pragma mark - Intial Methods
+//初始化数据
+- (void)assignDate {
+    
+}
+
+- (void)settingAppearance {
+    
+}
+
+- (void)loadSubViews {
+    
+}
+
+
+
+#pragma mark - Target Methods
+//点击事件
+
+#pragma mark - Network Methods
+//网络请求
+
+#pragma mark - Public Method
+//外部方法
+
+#pragma mark - Private Method
+//私有方法
+
+#pragma mark - Delegate
+//代理方法
+
+
+#pragma mark - Lazy Loads</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>170AF82A-69D3-4202-9743-4419CCED55BF</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>SY_template</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

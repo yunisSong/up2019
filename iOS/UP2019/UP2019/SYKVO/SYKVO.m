@@ -98,6 +98,7 @@ static NSString *const SYKVOMessagePrefix = @"SYKVO_";
             if (info.observer == observer) {
                 if ([info.key isEqualToString:keyPath]) {
                     [[self syObserverSet] removeObject:info];
+                    object_setClass(self, [self class]);
                 }
             }
         }
@@ -144,17 +145,17 @@ static void kvo_setter(id self, SEL _cmd, id newValue)
     //向父类发消息
     //此时类指向了动态创建的类 XXX_SYKVO_,他的父类就是 XXX
     //其实就相当于调用原来的方法
-    struct objc_super superInfo = {
-        self,
-        [self class]
-    };
-    void (*objc_msgSendSuperCasted)(void *, SEL, id) = (void *)objc_msgSendSuper;
-    objc_msgSendSuperCasted(&superInfo,_cmd,newValue);
+//    struct objc_super superInfo = {
+//        self,
+//        [self class]
+//    };
+//    void (*objc_msgSendSuperCasted)(void *, SEL, id) = (void *)objc_msgSendSuper;
+//    objc_msgSendSuperCasted(&superInfo,_cmd,newValue);
     
 
-//    NSString *prefixSelectName = [self prefixSelectName:setSeletName];
-//    SEL prefixSelect = NSSelectorFromString(prefixSelectName);
-//    [self performSelector:prefixSelect withObject:newValue];
+    NSString *prefixSelectName = [self prefixSelectName:setSeletName];
+    SEL prefixSelect = NSSelectorFromString(prefixSelectName);
+    [self performSelector:prefixSelect withObject:newValue];
     
     for (SYKVOInfo *info in [self syObserverSet]) {
         if ([info.key isEqualToString:getSeletName]) {
