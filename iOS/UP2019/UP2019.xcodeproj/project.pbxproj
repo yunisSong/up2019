@@ -3,11 +3,17 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		6FA351FB18FD93A6C39E4A33 /* libPods-UP2019.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F66B6EE4F599F2BCE792D1E1 /* libPods-UP2019.a */; };
+		78D45A1023C5F21E00E91BD6 /* SYTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78D45A0823C5F21E00E91BD6 /* SYTestViewController.xib */; };
+		78D45A1123C5F21E00E91BD6 /* ImageCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D45A0923C5F21E00E91BD6 /* ImageCollectionViewCell.m */; };
+		78D45A1223C5F21E00E91BD6 /* ImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78D45A0C23C5F21E00E91BD6 /* ImageCollectionViewCell.xib */; };
+		78D45A1323C5F21E00E91BD6 /* SYChooseImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D45A0E23C5F21E00E91BD6 /* SYChooseImageView.m */; };
+		78D45A1423C5F21E00E91BD6 /* SYTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D45A0F23C5F21E00E91BD6 /* SYTestViewController.m */; };
+		78D45A1723C5F32E00E91BD6 /* UIImageView+delete.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D45A1523C5F32E00E91BD6 /* UIImageView+delete.m */; };
 		8B01DB9822379E15009B77E2 /* SYYearViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B01DB9622379E15009B77E2 /* SYYearViewController.m */; };
 		8B01DB9C22379E83009B77E2 /* NSDate+index.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B01DB9B22379E83009B77E2 /* NSDate+index.m */; };
 		8B01DBF52237E23A009B77E2 /* LineProcessView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B01DBF42237E23A009B77E2 /* LineProcessView.m */; };
@@ -84,6 +90,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		78D45A0823C5F21E00E91BD6 /* SYTestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SYTestViewController.xib; sourceTree = "<group>"; };
+		78D45A0923C5F21E00E91BD6 /* ImageCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageCollectionViewCell.m; sourceTree = "<group>"; };
+		78D45A0A23C5F21E00E91BD6 /* SYTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYTestViewController.h; sourceTree = "<group>"; };
+		78D45A0B23C5F21E00E91BD6 /* SYChooseImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYChooseImageView.h; sourceTree = "<group>"; };
+		78D45A0C23C5F21E00E91BD6 /* ImageCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageCollectionViewCell.xib; sourceTree = "<group>"; };
+		78D45A0D23C5F21E00E91BD6 /* ImageCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageCollectionViewCell.h; sourceTree = "<group>"; };
+		78D45A0E23C5F21E00E91BD6 /* SYChooseImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYChooseImageView.m; sourceTree = "<group>"; };
+		78D45A0F23C5F21E00E91BD6 /* SYTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYTestViewController.m; sourceTree = "<group>"; };
+		78D45A1523C5F32E00E91BD6 /* UIImageView+delete.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+delete.m"; sourceTree = "<group>"; };
+		78D45A1623C5F32E00E91BD6 /* UIImageView+delete.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+delete.h"; sourceTree = "<group>"; };
 		8B01DB9522379E15009B77E2 /* SYYearViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYYearViewController.h; sourceTree = "<group>"; };
 		8B01DB9622379E15009B77E2 /* SYYearViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYYearViewController.m; sourceTree = "<group>"; };
 		8B01DB9A22379E83009B77E2 /* NSDate+index.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDate+index.h"; sourceTree = "<group>"; };
@@ -207,6 +223,23 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		78D45A0723C5F1DD00E91BD6 /* ChoosePhoto */ = {
+			isa = PBXGroup;
+			children = (
+				78D45A1623C5F32E00E91BD6 /* UIImageView+delete.h */,
+				78D45A1523C5F32E00E91BD6 /* UIImageView+delete.m */,
+				78D45A0D23C5F21E00E91BD6 /* ImageCollectionViewCell.h */,
+				78D45A0923C5F21E00E91BD6 /* ImageCollectionViewCell.m */,
+				78D45A0C23C5F21E00E91BD6 /* ImageCollectionViewCell.xib */,
+				78D45A0B23C5F21E00E91BD6 /* SYChooseImageView.h */,
+				78D45A0E23C5F21E00E91BD6 /* SYChooseImageView.m */,
+				78D45A0A23C5F21E00E91BD6 /* SYTestViewController.h */,
+				78D45A0F23C5F21E00E91BD6 /* SYTestViewController.m */,
+				78D45A0823C5F21E00E91BD6 /* SYTestViewController.xib */,
+			);
+			path = ChoosePhoto;
+			sourceTree = "<group>";
+		};
 		8B01DB9422379DEA009B77E2 /* 日期百分比 */ = {
 			isa = PBXGroup;
 			children = (
@@ -238,45 +271,6 @@
 				8B19D61B22168F60004C075F /* SYCardViewCell.m */,
 			);
 			path = CardView;
-			sourceTree = "<group>";
-		};
-		8B26740C229BBEB400AD5CAA /* 通用视图 */ = {
-			isa = PBXGroup;
-			children = (
-				8B26740E229BBEE400AD5CAA /* Controller */,
-				8B26740D229BBEE400AD5CAA /* Help */,
-				8B26740F229BBEE400AD5CAA /* Model */,
-				8B267410229BBEE400AD5CAA /* View */,
-			);
-			path = "通用视图";
-			sourceTree = "<group>";
-		};
-		8B26740D229BBEE400AD5CAA /* Help */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Help;
-			sourceTree = "<group>";
-		};
-		8B26740E229BBEE400AD5CAA /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		8B26740F229BBEE400AD5CAA /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		8B267410229BBEE400AD5CAA /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		8B79C6F321F712E600EB2845 /* Public */ = {
@@ -322,7 +316,6 @@
 				8B7C4ABB21DC951F00C4FEC6 /* ViewController.h */,
 				8B7C4ABC21DC951F00C4FEC6 /* ViewController.m */,
 				8B79C6F321F712E600EB2845 /* Public */,
-				8B26740C229BBEB400AD5CAA /* 通用视图 */,
 				8B7C4ACF21DCB02200C4FEC6 /* 视觉差动画 */,
 				8BFFD40121F068C2006863D9 /* 多级菜单 */,
 				8BF0AC6822155CD500849983 /* 自定义卡片视图 */,
@@ -331,6 +324,7 @@
 				8BFCE1912243724B006B3BAC /* 可点击Label */,
 				8BDFC08522AF99C200134DE6 /* NSInvocationDemo */,
 				8BDFC08F22B2380700134DE6 /* SYKVO */,
+				78D45A0723C5F1DD00E91BD6 /* ChoosePhoto */,
 				8B7C4ABE21DC951F00C4FEC6 /* Main.storyboard */,
 				8B7C4AC121DC952100C4FEC6 /* Assets.xcassets */,
 				8B7C4AC321DC952100C4FEC6 /* LaunchScreen.storyboard */,
@@ -618,8 +612,10 @@
 				8B7C4AD721DCB05400C4FEC6 /* Demo1TableViewCell.xib in Resources */,
 				8BF7E13121F8360200FC0296 /* data.json in Resources */,
 				8B7C4AC521DC952100C4FEC6 /* LaunchScreen.storyboard in Resources */,
+				78D45A1023C5F21E00E91BD6 /* SYTestViewController.xib in Resources */,
 				8B7C4AC221DC952100C4FEC6 /* Assets.xcassets in Resources */,
 				8BD0F9A321F73F2D00D3F48A /* CityTableViewCell.xib in Resources */,
+				78D45A1223C5F21E00E91BD6 /* ImageCollectionViewCell.xib in Resources */,
 				8B7C4AC021DC951F00C4FEC6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -658,19 +654,16 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-UP2019/Pods-UP2019-resources.sh",
-				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
-				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UP2019/Pods-UP2019-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IQKeyboardManager.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UP2019/Pods-UP2019-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UP2019/Pods-UP2019-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UP2019/Pods-UP2019-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -697,6 +690,7 @@
 				8BDFC09522B2387B00134DE6 /* SYKVO.m in Sources */,
 				8BDFC09222B2382C00134DE6 /* KVODemoViewController.m in Sources */,
 				8B0D143A21FF10F600821EC5 /* UIColor+Extension.m in Sources */,
+				78D45A1723C5F32E00E91BD6 /* UIImageView+delete.m in Sources */,
 				8B9DBE712238F4D100AE5DCF /* LayoutDemo1.m in Sources */,
 				8B79C6F621F712FE00EB2845 /* MBProgressHUD+show.m in Sources */,
 				8B9DBE6E2238F49B00AE5DCF /* LayoutDemoViewController.m in Sources */,
@@ -705,10 +699,12 @@
 				8B7C4AD621DCB05400C4FEC6 /* Demo1TableViewCell.m in Sources */,
 				8B01DB9C22379E83009B77E2 /* NSDate+index.m in Sources */,
 				8BD0F99F21F73F2D00D3F48A /* BaseModel.m in Sources */,
+				78D45A1323C5F21E00E91BD6 /* SYChooseImageView.m in Sources */,
 				8BD0F99E21F73F2D00D3F48A /* ListViewController.m in Sources */,
 				8BDFC09822B37D5B00134DE6 /* KVOTestModel.m in Sources */,
 				8B7C4ABD21DC951F00C4FEC6 /* ViewController.m in Sources */,
 				8B8550232238FB88008D58AC /* RotationLayout.m in Sources */,
+				78D45A1423C5F21E00E91BD6 /* SYTestViewController.m in Sources */,
 				8B7C4AD521DCB05400C4FEC6 /* Demo1ViewController.m in Sources */,
 				8B19D61C22168F60004C075F /* SYCardViewCell.m in Sources */,
 				8BD0F9A521F73F2D00D3F48A /* CityModel+index.m in Sources */,
@@ -716,6 +712,7 @@
 				8B01DBF52237E23A009B77E2 /* LineProcessView.m in Sources */,
 				8B7C4ABA21DC951F00C4FEC6 /* AppDelegate.m in Sources */,
 				8BFCE19422437280006B3BAC /* RTFViewController.m in Sources */,
+				78D45A1123C5F21E00E91BD6 /* ImageCollectionViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

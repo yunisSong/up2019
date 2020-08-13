@@ -1,0 +1,783 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2E96B1854E329FB7CD27206D /* Pods_YunisDemo_YunisDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79263A7498D9EB3570A6C07A /* Pods_YunisDemo_YunisDemoUITests.framework */; };
+		681145A9F22B766C3CC65A4A /* Pods_YunisDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E80803F543FB1D8AA7D2FE5 /* Pods_YunisDemo.framework */; };
+		780D558324BD8ECD006C58B5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 780D558224BD8ECD006C58B5 /* AppDelegate.m */; };
+		780D558624BD8ECD006C58B5 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 780D558524BD8ECD006C58B5 /* SceneDelegate.m */; };
+		780D558924BD8ECD006C58B5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 780D558824BD8ECD006C58B5 /* ViewController.m */; };
+		780D558C24BD8ECD006C58B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 780D558A24BD8ECD006C58B5 /* Main.storyboard */; };
+		780D558E24BD8ECE006C58B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 780D558D24BD8ECE006C58B5 /* Assets.xcassets */; };
+		780D559124BD8ECE006C58B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 780D558F24BD8ECE006C58B5 /* LaunchScreen.storyboard */; };
+		780D559424BD8ECE006C58B5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 780D559324BD8ECE006C58B5 /* main.m */; };
+		780D559E24BD8ECE006C58B5 /* YunisDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 780D559D24BD8ECE006C58B5 /* YunisDemoTests.m */; };
+		780D55A924BD8ECE006C58B5 /* YunisDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 780D55A824BD8ECE006C58B5 /* YunisDemoUITests.m */; };
+		780D55B924BD8F2C006C58B5 /* UIControl+clickInterval.m in Sources */ = {isa = PBXBuildFile; fileRef = 780D55B824BD8F2C006C58B5 /* UIControl+clickInterval.m */; };
+		780D55BC24BD9DE1006C58B5 /* NSObject+countdown.m in Sources */ = {isa = PBXBuildFile; fileRef = 780D55BB24BD9DE1006C58B5 /* NSObject+countdown.m */; };
+		780D55C024BED983006C58B5 /* DemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 780D55BE24BED983006C58B5 /* DemoViewController.m */; };
+		780D55C124BED983006C58B5 /* DemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 780D55BF24BED983006C58B5 /* DemoViewController.xib */; };
+		78FAABFA24E147D1000FEE66 /* SYMultipleLayoutButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FAABF924E147D1000FEE66 /* SYMultipleLayoutButton.m */; };
+		8C98682F13ED69BD6105B9C2 /* Pods_YunisDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62E409256DA0BA0279852595 /* Pods_YunisDemoTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		780D559A24BD8ECE006C58B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 780D557624BD8ECC006C58B5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 780D557D24BD8ECD006C58B5;
+			remoteInfo = YunisDemo;
+		};
+		780D55A524BD8ECE006C58B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 780D557624BD8ECC006C58B5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 780D557D24BD8ECD006C58B5;
+			remoteInfo = YunisDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		07A102528D9EE8FC6CBCBC3C /* Pods-YunisDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YunisDemo.release.xcconfig"; path = "Target Support Files/Pods-YunisDemo/Pods-YunisDemo.release.xcconfig"; sourceTree = "<group>"; };
+		0E80803F543FB1D8AA7D2FE5 /* Pods_YunisDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YunisDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		59EA856315AE62B4EF1058E8 /* Pods-YunisDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YunisDemoTests.release.xcconfig"; path = "Target Support Files/Pods-YunisDemoTests/Pods-YunisDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		62BDEEA9AA50B1C31622255B /* Pods-YunisDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YunisDemo.debug.xcconfig"; path = "Target Support Files/Pods-YunisDemo/Pods-YunisDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		62E409256DA0BA0279852595 /* Pods_YunisDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YunisDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		780D557E24BD8ECD006C58B5 /* YunisDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YunisDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		780D558124BD8ECD006C58B5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		780D558224BD8ECD006C58B5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		780D558424BD8ECD006C58B5 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		780D558524BD8ECD006C58B5 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		780D558724BD8ECD006C58B5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		780D558824BD8ECD006C58B5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		780D558B24BD8ECD006C58B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		780D558D24BD8ECE006C58B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		780D559024BD8ECE006C58B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		780D559224BD8ECE006C58B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		780D559324BD8ECE006C58B5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		780D559924BD8ECE006C58B5 /* YunisDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YunisDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		780D559D24BD8ECE006C58B5 /* YunisDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YunisDemoTests.m; sourceTree = "<group>"; };
+		780D559F24BD8ECE006C58B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		780D55A424BD8ECE006C58B5 /* YunisDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YunisDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		780D55A824BD8ECE006C58B5 /* YunisDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YunisDemoUITests.m; sourceTree = "<group>"; };
+		780D55AA24BD8ECE006C58B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		780D55B724BD8F2C006C58B5 /* UIControl+clickInterval.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIControl+clickInterval.h"; sourceTree = "<group>"; };
+		780D55B824BD8F2C006C58B5 /* UIControl+clickInterval.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIControl+clickInterval.m"; sourceTree = "<group>"; };
+		780D55BA24BD9DE1006C58B5 /* NSObject+countdown.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+countdown.h"; sourceTree = "<group>"; };
+		780D55BB24BD9DE1006C58B5 /* NSObject+countdown.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+countdown.m"; sourceTree = "<group>"; };
+		780D55BD24BED983006C58B5 /* DemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoViewController.h; sourceTree = "<group>"; };
+		780D55BE24BED983006C58B5 /* DemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoViewController.m; sourceTree = "<group>"; };
+		780D55BF24BED983006C58B5 /* DemoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DemoViewController.xib; sourceTree = "<group>"; };
+		78FAABF924E147D1000FEE66 /* SYMultipleLayoutButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYMultipleLayoutButton.m; sourceTree = "<group>"; };
+		78FAABFB24E3C96E000FEE66 /* SYMultipleLayoutButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYMultipleLayoutButton.h; sourceTree = "<group>"; };
+		79263A7498D9EB3570A6C07A /* Pods_YunisDemo_YunisDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YunisDemo_YunisDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BF67DE352B9733512F4FFED /* Pods-YunisDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YunisDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-YunisDemoTests/Pods-YunisDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D463133620738E2C8DD961EA /* Pods-YunisDemo-YunisDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YunisDemo-YunisDemoUITests.release.xcconfig"; path = "Target Support Files/Pods-YunisDemo-YunisDemoUITests/Pods-YunisDemo-YunisDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FA4211E569C999DA78BF55EF /* Pods-YunisDemo-YunisDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YunisDemo-YunisDemoUITests.debug.xcconfig"; path = "Target Support Files/Pods-YunisDemo-YunisDemoUITests/Pods-YunisDemo-YunisDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		780D557B24BD8ECD006C58B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				681145A9F22B766C3CC65A4A /* Pods_YunisDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		780D559624BD8ECE006C58B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C98682F13ED69BD6105B9C2 /* Pods_YunisDemoTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		780D55A124BD8ECE006C58B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E96B1854E329FB7CD27206D /* Pods_YunisDemo_YunisDemoUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2F7A543D29EC15F95FD472EC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				62BDEEA9AA50B1C31622255B /* Pods-YunisDemo.debug.xcconfig */,
+				07A102528D9EE8FC6CBCBC3C /* Pods-YunisDemo.release.xcconfig */,
+				FA4211E569C999DA78BF55EF /* Pods-YunisDemo-YunisDemoUITests.debug.xcconfig */,
+				D463133620738E2C8DD961EA /* Pods-YunisDemo-YunisDemoUITests.release.xcconfig */,
+				8BF67DE352B9733512F4FFED /* Pods-YunisDemoTests.debug.xcconfig */,
+				59EA856315AE62B4EF1058E8 /* Pods-YunisDemoTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		780D557524BD8ECC006C58B5 = {
+			isa = PBXGroup;
+			children = (
+				780D558024BD8ECD006C58B5 /* YunisDemo */,
+				780D559C24BD8ECE006C58B5 /* YunisDemoTests */,
+				780D55A724BD8ECE006C58B5 /* YunisDemoUITests */,
+				780D557F24BD8ECD006C58B5 /* Products */,
+				2F7A543D29EC15F95FD472EC /* Pods */,
+				ED274DBC13C193F35746AD68 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		780D557F24BD8ECD006C58B5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				780D557E24BD8ECD006C58B5 /* YunisDemo.app */,
+				780D559924BD8ECE006C58B5 /* YunisDemoTests.xctest */,
+				780D55A424BD8ECE006C58B5 /* YunisDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		780D558024BD8ECD006C58B5 /* YunisDemo */ = {
+			isa = PBXGroup;
+			children = (
+				780D558124BD8ECD006C58B5 /* AppDelegate.h */,
+				780D558224BD8ECD006C58B5 /* AppDelegate.m */,
+				780D558424BD8ECD006C58B5 /* SceneDelegate.h */,
+				780D558524BD8ECD006C58B5 /* SceneDelegate.m */,
+				780D558724BD8ECD006C58B5 /* ViewController.h */,
+				780D558824BD8ECD006C58B5 /* ViewController.m */,
+				780D55BD24BED983006C58B5 /* DemoViewController.h */,
+				780D55BE24BED983006C58B5 /* DemoViewController.m */,
+				780D55BF24BED983006C58B5 /* DemoViewController.xib */,
+				780D55B624BD8ED7006C58B5 /* Button */,
+				780D558A24BD8ECD006C58B5 /* Main.storyboard */,
+				780D558D24BD8ECE006C58B5 /* Assets.xcassets */,
+				780D558F24BD8ECE006C58B5 /* LaunchScreen.storyboard */,
+				780D559224BD8ECE006C58B5 /* Info.plist */,
+				780D559324BD8ECE006C58B5 /* main.m */,
+			);
+			path = YunisDemo;
+			sourceTree = "<group>";
+		};
+		780D559C24BD8ECE006C58B5 /* YunisDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				780D559D24BD8ECE006C58B5 /* YunisDemoTests.m */,
+				780D559F24BD8ECE006C58B5 /* Info.plist */,
+			);
+			path = YunisDemoTests;
+			sourceTree = "<group>";
+		};
+		780D55A724BD8ECE006C58B5 /* YunisDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				780D55A824BD8ECE006C58B5 /* YunisDemoUITests.m */,
+				780D55AA24BD8ECE006C58B5 /* Info.plist */,
+			);
+			path = YunisDemoUITests;
+			sourceTree = "<group>";
+		};
+		780D55B624BD8ED7006C58B5 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				78FAABF724E147AE000FEE66 /* MultipleLayout */,
+				780D55B724BD8F2C006C58B5 /* UIControl+clickInterval.h */,
+				780D55B824BD8F2C006C58B5 /* UIControl+clickInterval.m */,
+				780D55BA24BD9DE1006C58B5 /* NSObject+countdown.h */,
+				780D55BB24BD9DE1006C58B5 /* NSObject+countdown.m */,
+			);
+			path = Button;
+			sourceTree = "<group>";
+		};
+		78FAABF724E147AE000FEE66 /* MultipleLayout */ = {
+			isa = PBXGroup;
+			children = (
+				78FAABFB24E3C96E000FEE66 /* SYMultipleLayoutButton.h */,
+				78FAABF924E147D1000FEE66 /* SYMultipleLayoutButton.m */,
+			);
+			path = MultipleLayout;
+			sourceTree = "<group>";
+		};
+		ED274DBC13C193F35746AD68 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0E80803F543FB1D8AA7D2FE5 /* Pods_YunisDemo.framework */,
+				79263A7498D9EB3570A6C07A /* Pods_YunisDemo_YunisDemoUITests.framework */,
+				62E409256DA0BA0279852595 /* Pods_YunisDemoTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		780D557D24BD8ECD006C58B5 /* YunisDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 780D55AD24BD8ECE006C58B5 /* Build configuration list for PBXNativeTarget "YunisDemo" */;
+			buildPhases = (
+				A827A64DD18012AA15C01EB2 /* [CP] Check Pods Manifest.lock */,
+				780D557A24BD8ECD006C58B5 /* Sources */,
+				780D557B24BD8ECD006C58B5 /* Frameworks */,
+				780D557C24BD8ECD006C58B5 /* Resources */,
+				85E85385949581FB19F76854 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YunisDemo;
+			productName = YunisDemo;
+			productReference = 780D557E24BD8ECD006C58B5 /* YunisDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		780D559824BD8ECE006C58B5 /* YunisDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 780D55B024BD8ECE006C58B5 /* Build configuration list for PBXNativeTarget "YunisDemoTests" */;
+			buildPhases = (
+				B41EF069B7C27B98FC12BE23 /* [CP] Check Pods Manifest.lock */,
+				780D559524BD8ECE006C58B5 /* Sources */,
+				780D559624BD8ECE006C58B5 /* Frameworks */,
+				780D559724BD8ECE006C58B5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				780D559B24BD8ECE006C58B5 /* PBXTargetDependency */,
+			);
+			name = YunisDemoTests;
+			productName = YunisDemoTests;
+			productReference = 780D559924BD8ECE006C58B5 /* YunisDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		780D55A324BD8ECE006C58B5 /* YunisDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 780D55B324BD8ECE006C58B5 /* Build configuration list for PBXNativeTarget "YunisDemoUITests" */;
+			buildPhases = (
+				7D75711F4B1D9B10F7FE0D1C /* [CP] Check Pods Manifest.lock */,
+				780D55A024BD8ECE006C58B5 /* Sources */,
+				780D55A124BD8ECE006C58B5 /* Frameworks */,
+				780D55A224BD8ECE006C58B5 /* Resources */,
+				FCCDDC37695669FEBDD450E7 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				780D55A624BD8ECE006C58B5 /* PBXTargetDependency */,
+			);
+			name = YunisDemoUITests;
+			productName = YunisDemoUITests;
+			productReference = 780D55A424BD8ECE006C58B5 /* YunisDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		780D557624BD8ECC006C58B5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = Yunis;
+				TargetAttributes = {
+					780D557D24BD8ECD006C58B5 = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					780D559824BD8ECE006C58B5 = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = 780D557D24BD8ECD006C58B5;
+					};
+					780D55A324BD8ECE006C58B5 = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = 780D557D24BD8ECD006C58B5;
+					};
+				};
+			};
+			buildConfigurationList = 780D557924BD8ECC006C58B5 /* Build configuration list for PBXProject "YunisDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 780D557524BD8ECC006C58B5;
+			productRefGroup = 780D557F24BD8ECD006C58B5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				780D557D24BD8ECD006C58B5 /* YunisDemo */,
+				780D559824BD8ECE006C58B5 /* YunisDemoTests */,
+				780D55A324BD8ECE006C58B5 /* YunisDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		780D557C24BD8ECD006C58B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				780D559124BD8ECE006C58B5 /* LaunchScreen.storyboard in Resources */,
+				780D558E24BD8ECE006C58B5 /* Assets.xcassets in Resources */,
+				780D558C24BD8ECD006C58B5 /* Main.storyboard in Resources */,
+				780D55C124BED983006C58B5 /* DemoViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		780D559724BD8ECE006C58B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		780D55A224BD8ECE006C58B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7D75711F4B1D9B10F7FE0D1C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YunisDemo-YunisDemoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		85E85385949581FB19F76854 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YunisDemo/Pods-YunisDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YunisDemo/Pods-YunisDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YunisDemo/Pods-YunisDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A827A64DD18012AA15C01EB2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YunisDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B41EF069B7C27B98FC12BE23 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YunisDemoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FCCDDC37695669FEBDD450E7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YunisDemo-YunisDemoUITests/Pods-YunisDemo-YunisDemoUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YunisDemo-YunisDemoUITests/Pods-YunisDemo-YunisDemoUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YunisDemo-YunisDemoUITests/Pods-YunisDemo-YunisDemoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		780D557A24BD8ECD006C58B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				780D558924BD8ECD006C58B5 /* ViewController.m in Sources */,
+				780D55BC24BD9DE1006C58B5 /* NSObject+countdown.m in Sources */,
+				780D558324BD8ECD006C58B5 /* AppDelegate.m in Sources */,
+				780D559424BD8ECE006C58B5 /* main.m in Sources */,
+				780D558624BD8ECD006C58B5 /* SceneDelegate.m in Sources */,
+				780D55C024BED983006C58B5 /* DemoViewController.m in Sources */,
+				780D55B924BD8F2C006C58B5 /* UIControl+clickInterval.m in Sources */,
+				78FAABFA24E147D1000FEE66 /* SYMultipleLayoutButton.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		780D559524BD8ECE006C58B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				780D559E24BD8ECE006C58B5 /* YunisDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		780D55A024BD8ECE006C58B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				780D55A924BD8ECE006C58B5 /* YunisDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		780D559B24BD8ECE006C58B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 780D557D24BD8ECD006C58B5 /* YunisDemo */;
+			targetProxy = 780D559A24BD8ECE006C58B5 /* PBXContainerItemProxy */;
+		};
+		780D55A624BD8ECE006C58B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 780D557D24BD8ECD006C58B5 /* YunisDemo */;
+			targetProxy = 780D55A524BD8ECE006C58B5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		780D558A24BD8ECD006C58B5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				780D558B24BD8ECD006C58B5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		780D558F24BD8ECE006C58B5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				780D559024BD8ECE006C58B5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		780D55AB24BD8ECE006C58B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		780D55AC24BD8ECE006C58B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		780D55AE24BD8ECE006C58B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62BDEEA9AA50B1C31622255B /* Pods-YunisDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = YunisDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Yunis.YunisDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		780D55AF24BD8ECE006C58B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07A102528D9EE8FC6CBCBC3C /* Pods-YunisDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = YunisDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Yunis.YunisDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		780D55B124BD8ECE006C58B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BF67DE352B9733512F4FFED /* Pods-YunisDemoTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = YunisDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Yunis.YunisDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YunisDemo.app/YunisDemo";
+			};
+			name = Debug;
+		};
+		780D55B224BD8ECE006C58B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59EA856315AE62B4EF1058E8 /* Pods-YunisDemoTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = YunisDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Yunis.YunisDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YunisDemo.app/YunisDemo";
+			};
+			name = Release;
+		};
+		780D55B424BD8ECE006C58B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA4211E569C999DA78BF55EF /* Pods-YunisDemo-YunisDemoUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = YunisDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Yunis.YunisDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = YunisDemo;
+			};
+			name = Debug;
+		};
+		780D55B524BD8ECE006C58B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D463133620738E2C8DD961EA /* Pods-YunisDemo-YunisDemoUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = YunisDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Yunis.YunisDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = YunisDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		780D557924BD8ECC006C58B5 /* Build configuration list for PBXProject "YunisDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				780D55AB24BD8ECE006C58B5 /* Debug */,
+				780D55AC24BD8ECE006C58B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		780D55AD24BD8ECE006C58B5 /* Build configuration list for PBXNativeTarget "YunisDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				780D55AE24BD8ECE006C58B5 /* Debug */,
+				780D55AF24BD8ECE006C58B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		780D55B024BD8ECE006C58B5 /* Build configuration list for PBXNativeTarget "YunisDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				780D55B124BD8ECE006C58B5 /* Debug */,
+				780D55B224BD8ECE006C58B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		780D55B324BD8ECE006C58B5 /* Build configuration list for PBXNativeTarget "YunisDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				780D55B424BD8ECE006C58B5 /* Debug */,
+				780D55B524BD8ECE006C58B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 780D557624BD8ECC006C58B5 /* Project object */;
+}

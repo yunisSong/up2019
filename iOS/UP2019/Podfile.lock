@@ -14,7 +14,6 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
-  - IQKeyboardManager (6.0.6)
   - JPFPSStatus (0.1.1)
   - Masonry (1.1.0)
   - MBProgressHUD (0.9.2)
@@ -25,10 +24,10 @@ PODS:
     - SDWebImage/Core (= 5.0.0)
   - SDWebImage/Core (5.0.0)
   - SYTouchLabel (0.0.4)
+  - TZImagePickerController (3.0.9)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.2.1)
-  - IQKeyboardManager (~> 6.0.3)
   - JPFPSStatus
   - Masonry (~> 1.1.0)
   - MBProgressHUD (~> 0.9.1)
@@ -37,11 +36,11 @@ DEPENDENCIES:
   - PPCounter (from `https://github.com/jkpang/PPCounter.git`)
   - SDWebImage
   - SYTouchLabel
+  - TZImagePickerController (~> 3.0.7)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - AFNetworking
-    - IQKeyboardManager
     - JPFPSStatus
     - Masonry
     - MBProgressHUD
@@ -49,6 +48,8 @@ SPEC REPOS:
     - MJRefresh
     - SDWebImage
     - SYTouchLabel
+  trunk:
+    - TZImagePickerController
 
 EXTERNAL SOURCES:
   PPCounter:
@@ -61,7 +62,6 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
-  IQKeyboardManager: 6b4ecd3e59cf55a26133d802d4678721d7f88499
   JPFPSStatus: 03f32aa3d4d7d0c5bf56f6f3e7cf8b7280a5f52c
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
@@ -70,7 +70,8 @@ SPEC CHECKSUMS:
   PPCounter: da37c0d8bfeeffe7ef4c331468203e17f2e30fbf
   SDWebImage: 5de80a0302de9e377e62f47d2fa1304efff0e55f
   SYTouchLabel: 7878f60f589a85368963c2910ef5e0418355960e
+  TZImagePickerController: ea3e906af8caa7088f612ad673feb73cc6aa6bfc
 
-PODFILE CHECKSUM: 355be19b10dc69b6ec4a8bd0b2e529b5bf91712f
+PODFILE CHECKSUM: 4cf129291086206dca2d2ccbc72b5f7f36d98da1
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.8.4
