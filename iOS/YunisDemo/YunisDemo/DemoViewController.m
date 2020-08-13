@@ -13,7 +13,6 @@
 @interface DemoViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *btr;
 @property(nonatomic,strong)SYMultipleLayoutButton *layoutButton;
-@property(nonatomic,assign)int type;
 @end
 #define WS(weakSelf)  __weak __typeof(&*self)weakSelf = self;
 
@@ -21,10 +20,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-	self.type = MultipleLayoutButtonTypeLeftTitle;
     // Do any additional setup after loading the view from its nib.
 	self.btr.clickInterval = 2;
-	SYMultipleLayoutButton *leftButton = [SYMultipleLayoutButton butonWithType:MultipleLayoutButtonTypeRightTitle title:@"天涯" iconImage:[UIImage imageNamed:@"icon_avatar_normal"]];
+	SYMultipleLayoutButton *leftButton = [SYMultipleLayoutButton butonWithConfig:[SYElementConfig defaultConfig] title:@"天涯" iconImage:[UIImage imageNamed:@"icon_avatar_normal" ]];
 	[self.view addSubview:leftButton];
 	[leftButton mas_makeConstraints:^(MASConstraintMaker *make) {
 		make.left.equalTo(self.btr);

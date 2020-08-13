@@ -7,15 +7,45 @@
 //
 
 #import "SYMultipleLayoutButton.h"
+
+@implementation SYElementConfig
+
++ (instancetype)defaultConfig
+{
+	SYElementConfig *config = [SYElementConfig new];
+	config.titleFont = [UIFont systemFontOfSize:16.f];
+	config.titleColor = [UIColor blackColor];
+	config.imageViewSize = CGSizeMake(25, 25);
+	config.distance = 8;
+	config.margin = 8;
+	config.buttonRadius = 8;
+	config.layoutType = MultipleLayoutButtonTypeLeftTitle;
+	return config;
+}
+
+@end
+
 @interface SYMultipleLayoutButton()
 
 @property(nonatomic,strong)UILabel *titleLabel;
 @property(nonatomic,strong)UIImageView *iconImageView;
 /**<点击事件回调*/
-@property (nonatomic,copy) dispatch_block_t clickHandle;
-@property(nonatomic,strong)UIView *helpView;
-@property(nonatomic,strong)UIControl *touchControl;
+@property (nonatomic,copy  ) dispatch_block_t clickHandle;
+@property (nonatomic,strong) UIView           *helpView;
+@property (nonatomic,strong) UIControl        *touchControl;
+@property (nonatomic,strong) SYElementConfig  *config;
+@property (nonatomic,strong) UIFont           *titleFont;	/**<文字字体*/
+@property (nonatomic,strong) UIColor          *titleColor;	/**<文字颜色*/
+@property (nonatomic,assign) CGSize           imageViewSize;/**<图片大小*/
+@property (nonatomic,assign) float            distance;		/**<图片与文字间的间隔*/
+@property (nonatomic,assign) float            margin;		/**<文字、图片 与按钮的边距*/
+@property (nonatomic,assign) float            buttonRadius;	/**<圆角*/
+
+
+/**<布局类型*/
+@property (nonatomic,assign) MultipleLayoutButtonType layoutType;
 @end
+
 @implementation SYMultipleLayoutButton
 
 #define SYViewBorderRadius(View, Radius, Width, Color)\
@@ -27,16 +57,14 @@
 
 #pragma mark - Public Method
 //外部方法
-
-+ (instancetype)butonWithType:(MultipleLayoutButtonType)type title:(NSString *)title iconImage:(UIImage *)iconImage
++ (instancetype)butonWithConfig:(SYElementConfig *)config title:(NSString *)title iconImage:(UIImage *)iconImage
 {
 	SYMultipleLayoutButton *button = [[SYMultipleLayoutButton alloc] init];
-	button.layoutType = type;
+	button.config = config;
 	button.title = title;
 	button.iconImage = iconImage;
 	return button;
 }
-
 
 
 - (void)addTarget:(id)target select:(SEL)select
@@ -56,7 +84,6 @@
 {
 	self = [super initWithFrame:frame];
 	if (self) {
-		[self assignDate];
 		[self settingAppearance];
 		[self loadSubViews];
 	}
@@ -164,14 +191,6 @@
 }
 #pragma mark - Intial Methods
 //初始化数据
-- (void)assignDate {
-	self.titleFont = [UIFont systemFontOfSize:16.f];
-	self.titleColor = [UIColor blackColor];
-	self.imageViewSize = CGSizeMake(25, 25);
-	self.distance = 8;
-	self.margin = 8;
-	self.buttonRadius = 8;
-}
 
 - (void)settingAppearance {
 	self.backgroundColor = [UIColor whiteColor];
@@ -238,6 +257,18 @@
 }
 
 #pragma mark - Set
+- (void)setConfig:(SYElementConfig *)config
+{
+	_config = config;
+	self.titleFont = _config.titleFont;
+	self.titleColor = _config.titleColor;
+	self.imageViewSize = _config.imageViewSize;
+	self.distance = _config.distance;
+	self.margin = _config.margin;
+	self.buttonRadius = _config.buttonRadius;
+	self.layoutType = _config.layoutType;
+	
+}
 - (void)setLayoutType:(MultipleLayoutButtonType)layoutType
 {
 	_layoutType = layoutType;
