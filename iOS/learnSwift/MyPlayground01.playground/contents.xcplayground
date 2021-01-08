@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios' display-mode='raw'>
+    <pages>
+        <page name='Demo1'/>
+        <page name='注释'/>
+        <page name='数据类型'/>
+        <page name='流程控制'/>
+        <page name='函数'/>
+        <page name='别名'/>
+        <page name='枚举'/>
+        <page name='可选项'/>
+    </pages>
+</playground>

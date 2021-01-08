@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "DemoViewController.h"
+#import "TableViewDemoViewController.h"
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *btr;
 
@@ -25,7 +26,7 @@
 }
 - (IBAction)click:(id)sender {
 	NSLog(@"11111");
-	[self.navigationController pushViewController:[DemoViewController new] animated:YES];
+	[self.navigationController pushViewController:[TableViewDemoViewController new] animated:YES];
 
 }
 

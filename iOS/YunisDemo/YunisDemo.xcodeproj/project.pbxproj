@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -22,6 +22,13 @@
 		780D55BC24BD9DE1006C58B5 /* NSObject+countdown.m in Sources */ = {isa = PBXBuildFile; fileRef = 780D55BB24BD9DE1006C58B5 /* NSObject+countdown.m */; };
 		780D55C024BED983006C58B5 /* DemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 780D55BE24BED983006C58B5 /* DemoViewController.m */; };
 		780D55C124BED983006C58B5 /* DemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 780D55BF24BED983006C58B5 /* DemoViewController.xib */; };
+		7845C9C824E530740083EA23 /* SYLargeImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7845C9C724E530740083EA23 /* SYLargeImageView.m */; };
+		7845C9CD24E676BB0083EA23 /* SYShowMoreLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7845C9CC24E676BB0083EA23 /* SYShowMoreLabel.m */; };
+		78632EF6254A959E005CFCAE /* SYTableContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 78632EF5254A959E005CFCAE /* SYTableContainerView.m */; };
+		78632EF9254A9793005CFCAE /* TableViewDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78632EF8254A9793005CFCAE /* TableViewDemoViewController.m */; };
+		78728FF72513447700A3AC1F /* UIView+SYLayoutHelp.m in Sources */ = {isa = PBXBuildFile; fileRef = 78728FF62513447700A3AC1F /* UIView+SYLayoutHelp.m */; };
+		78728FFB25134AA600A3AC1F /* UITableView+SYManagement.m in Sources */ = {isa = PBXBuildFile; fileRef = 78728FFA25134AA600A3AC1F /* UITableView+SYManagement.m */; };
+		78897394253EB69C008098A9 /* SYCycleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 78897393253EB69C008098A9 /* SYCycleView.m */; };
 		78FAABFA24E147D1000FEE66 /* SYMultipleLayoutButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FAABF924E147D1000FEE66 /* SYMultipleLayoutButton.m */; };
 		8C98682F13ED69BD6105B9C2 /* Pods_YunisDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62E409256DA0BA0279852595 /* Pods_YunisDemoTests.framework */; };
 /* End PBXBuildFile section */
@@ -74,6 +81,20 @@
 		780D55BD24BED983006C58B5 /* DemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoViewController.h; sourceTree = "<group>"; };
 		780D55BE24BED983006C58B5 /* DemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoViewController.m; sourceTree = "<group>"; };
 		780D55BF24BED983006C58B5 /* DemoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DemoViewController.xib; sourceTree = "<group>"; };
+		7845C9C624E530740083EA23 /* SYLargeImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYLargeImageView.h; sourceTree = "<group>"; };
+		7845C9C724E530740083EA23 /* SYLargeImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYLargeImageView.m; sourceTree = "<group>"; };
+		7845C9CB24E676BB0083EA23 /* SYShowMoreLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYShowMoreLabel.h; sourceTree = "<group>"; };
+		7845C9CC24E676BB0083EA23 /* SYShowMoreLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYShowMoreLabel.m; sourceTree = "<group>"; };
+		78632EF4254A959E005CFCAE /* SYTableContainerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYTableContainerView.h; sourceTree = "<group>"; };
+		78632EF5254A959E005CFCAE /* SYTableContainerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYTableContainerView.m; sourceTree = "<group>"; };
+		78632EF7254A9793005CFCAE /* TableViewDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewDemoViewController.h; sourceTree = "<group>"; };
+		78632EF8254A9793005CFCAE /* TableViewDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewDemoViewController.m; sourceTree = "<group>"; };
+		78728FF52513447700A3AC1F /* UIView+SYLayoutHelp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+SYLayoutHelp.h"; sourceTree = "<group>"; };
+		78728FF62513447700A3AC1F /* UIView+SYLayoutHelp.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+SYLayoutHelp.m"; sourceTree = "<group>"; };
+		78728FF925134AA600A3AC1F /* UITableView+SYManagement.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITableView+SYManagement.h"; sourceTree = "<group>"; };
+		78728FFA25134AA600A3AC1F /* UITableView+SYManagement.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITableView+SYManagement.m"; sourceTree = "<group>"; };
+		78897392253EB69C008098A9 /* SYCycleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYCycleView.h; sourceTree = "<group>"; };
+		78897393253EB69C008098A9 /* SYCycleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYCycleView.m; sourceTree = "<group>"; };
 		78FAABF924E147D1000FEE66 /* SYMultipleLayoutButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYMultipleLayoutButton.m; sourceTree = "<group>"; };
 		78FAABFB24E3C96E000FEE66 /* SYMultipleLayoutButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYMultipleLayoutButton.h; sourceTree = "<group>"; };
 		79263A7498D9EB3570A6C07A /* Pods_YunisDemo_YunisDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YunisDemo_YunisDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -120,7 +141,6 @@
 				8BF67DE352B9733512F4FFED /* Pods-YunisDemoTests.debug.xcconfig */,
 				59EA856315AE62B4EF1058E8 /* Pods-YunisDemoTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -158,6 +178,14 @@
 				780D55BD24BED983006C58B5 /* DemoViewController.h */,
 				780D55BE24BED983006C58B5 /* DemoViewController.m */,
 				780D55BF24BED983006C58B5 /* DemoViewController.xib */,
+				78632EF7254A9793005CFCAE /* TableViewDemoViewController.h */,
+				78632EF8254A9793005CFCAE /* TableViewDemoViewController.m */,
+				78897391253EB669008098A9 /* CycleView */,
+				78728FF8251346B000A3AC1F /* UITableView */,
+				78728FF42513441D00A3AC1F /* UIView */,
+				7845C9CA24E61FAC0083EA23 /* ProgressBar */,
+				7845C9C924E61E100083EA23 /* ShowMoreLabel */,
+				7845C9C524E5295B0083EA23 /* LoadLargeImage */,
 				780D55B624BD8ED7006C58B5 /* Button */,
 				780D558A24BD8ECD006C58B5 /* Main.storyboard */,
 				780D558D24BD8ECE006C58B5 /* Assets.xcassets */,
@@ -196,6 +224,60 @@
 				780D55BB24BD9DE1006C58B5 /* NSObject+countdown.m */,
 			);
 			path = Button;
+			sourceTree = "<group>";
+		};
+		7845C9C524E5295B0083EA23 /* LoadLargeImage */ = {
+			isa = PBXGroup;
+			children = (
+				7845C9C624E530740083EA23 /* SYLargeImageView.h */,
+				7845C9C724E530740083EA23 /* SYLargeImageView.m */,
+			);
+			path = LoadLargeImage;
+			sourceTree = "<group>";
+		};
+		7845C9C924E61E100083EA23 /* ShowMoreLabel */ = {
+			isa = PBXGroup;
+			children = (
+				7845C9CB24E676BB0083EA23 /* SYShowMoreLabel.h */,
+				7845C9CC24E676BB0083EA23 /* SYShowMoreLabel.m */,
+			);
+			path = ShowMoreLabel;
+			sourceTree = "<group>";
+		};
+		7845C9CA24E61FAC0083EA23 /* ProgressBar */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ProgressBar;
+			sourceTree = "<group>";
+		};
+		78728FF42513441D00A3AC1F /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				78728FF52513447700A3AC1F /* UIView+SYLayoutHelp.h */,
+				78728FF62513447700A3AC1F /* UIView+SYLayoutHelp.m */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		78728FF8251346B000A3AC1F /* UITableView */ = {
+			isa = PBXGroup;
+			children = (
+				78728FF925134AA600A3AC1F /* UITableView+SYManagement.h */,
+				78728FFA25134AA600A3AC1F /* UITableView+SYManagement.m */,
+				78632EF4254A959E005CFCAE /* SYTableContainerView.h */,
+				78632EF5254A959E005CFCAE /* SYTableContainerView.m */,
+			);
+			path = UITableView;
+			sourceTree = "<group>";
+		};
+		78897391253EB669008098A9 /* CycleView */ = {
+			isa = PBXGroup;
+			children = (
+				78897392253EB69C008098A9 /* SYCycleView.h */,
+				78897393253EB69C008098A9 /* SYCycleView.m */,
+			);
+			path = CycleView;
 			sourceTree = "<group>";
 		};
 		78FAABF724E147AE000FEE66 /* MultipleLayout */ = {
@@ -456,13 +538,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78632EF9254A9793005CFCAE /* TableViewDemoViewController.m in Sources */,
 				780D558924BD8ECD006C58B5 /* ViewController.m in Sources */,
+				78897394253EB69C008098A9 /* SYCycleView.m in Sources */,
 				780D55BC24BD9DE1006C58B5 /* NSObject+countdown.m in Sources */,
 				780D558324BD8ECD006C58B5 /* AppDelegate.m in Sources */,
+				78728FF72513447700A3AC1F /* UIView+SYLayoutHelp.m in Sources */,
 				780D559424BD8ECE006C58B5 /* main.m in Sources */,
 				780D558624BD8ECD006C58B5 /* SceneDelegate.m in Sources */,
+				78632EF6254A959E005CFCAE /* SYTableContainerView.m in Sources */,
 				780D55C024BED983006C58B5 /* DemoViewController.m in Sources */,
 				780D55B924BD8F2C006C58B5 /* UIControl+clickInterval.m in Sources */,
+				7845C9C824E530740083EA23 /* SYLargeImageView.m in Sources */,
+				7845C9CD24E676BB0083EA23 /* SYShowMoreLabel.m in Sources */,
+				78728FFB25134AA600A3AC1F /* UITableView+SYManagement.m in Sources */,
 				78FAABFA24E147D1000FEE66 /* SYMultipleLayoutButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
